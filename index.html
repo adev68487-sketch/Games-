@@ -1,103 +1,1541 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Markflow</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    body {
-      display: flex;
-      gap: 20px;
-      padding: 20px;
-      font-family: sans-serif;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Language" content="en" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="theme-color" content="#24a3b5">
+
+       <script>
+           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+           })(window,document,'script','dataLayer','GTM-PJBM6DG');
+       </script>
+
+<link  rel="preload" href="https://mcss.shopclues.net/assets/react_css/home.css?version=567" as="style">
+<link  rel="stylesheet" href="https://mcss.shopclues.net/assets/react_css/home.css?version=567" type="text/css">
+<link rel="preconnect" href="//cdn2.shopclues.com" />
+<link rel="preconnect" href="//images2.shopclues.com" />
+<link rel="preconnect" href="//mjs.shopclues.net" />
+<link rel="preconnect" href="//mcss.shopclues.net" />
+<link rel="preconnect" href="//assets.adobedtm.com" />
+      <link rel="preconnect" href="//cdn1.shopclues.com" />
+      <link rel="preconnect" href="//cdn.shopclues.net" />
+      <link rel="preconnect" href="//connect.facebook.net" />
+      <link rel="preconnect" href="//googleads.g.doubleclick.net" />
+      <link rel="preconnect" href="//pagead2.googlesyndication.com" />
+      <link rel="preconnect" href="//ad.doubleclick.net" />
+      <link rel="preconnect" href="//googletagservices.com" />
+      <link rel="preconnect" href="//gstatic.com" />
+      <link rel="preconnect" href="//cdn.tt.omtrdc.net"/>
+      <link rel="preconnect" href="https//smo.shopclues.com"/>
+      <link rel="preconnect" href="//www.google-analytics.com"/>
+      <link rel="preconnect" href="//ssl.google-analytics.com"/>
+      <link rel="preconnect" href="//adservice.google.com"/>
+      <link rel="preconnect" href="//www.google.com"/>
+      <link rel="preconnect" href="//www.google.co.in"/>
+      <link rel="preconnect" href="//adservice.google.co.in"/>
+      <link rel="preconnect" href="//ajax.googleapis.com"/>
+      <link rel="preconnect" href="//bat.bing.com"/>
+      <link rel="preconnect" href="//googleadservices.com"/>
+            <link rel="preconnect" href="//d2933uxo1uhve4.cloudfront.net">
+      <link rel="preconnect" href="//fonts.googleapis.com">
+      <link rel="preconnect" href="//fonts.gstatic.com">
+  <link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Shopclues Web App">
+<meta name="google-site-verification" content="l1AmmFI1CgfpXj9vDybswuNb-Vbh_NKH9qkrs7J4ARg" />
+<link rel="apple-touch-icon" href="/assets/images/manifest_icons/icon128.png" sizes="128*128">
+<script>
+var city_id="";
+var vid_new='';
+var hindi_traslate = "";
+var hindi_traslate_btn = "";
+var close_hindi_btn = "";
+var cb_scen = 0;
+var test_senarios = '';
+var enable_ab = {"images_fea":0,"personalization_expnum":1,"happy_hour":1,"recently_viewed":1,"pdp_bigsale":1,"like_feature":1,"pdp_img_auto_scroll":1,"also_viewed_view":1,"image_gallery_AB":1};
+var extra_mod_param= 9;
+var personalized_bab_home ='';
+var ab_test_scenarios = {"images_fea":["0","0","100"],"personalization_expnum":["0","50","0","50"],"happy_hour":["0","0","100"],"recently_viewed":["25","50","25"],"pdp_bigsale":["50","50"],"like_feature":["100","0","0"],"pdp_img_auto_scroll":["100","0","0"],"also_viewed_view":["0","0","100"],"image_gallery_AB":["25","50","25"],"home_personalizationBlock":["50","50"],"pdp_layout":["50","50"],"wish_cart_ab":["0","100"],"search_recommended_home":["50","50"],"new_deals_home":["25","25","25","25"],"also_viewed_scroll":["50","50"],"avg_order_value":["50","50","0"],"personalize_diversity":["50","50"],"hero_banner_scroll":["100","0"],"what_app_order_ab":["100","0"],"customer_review_videos":["100","0"],"one_step_checkout":["100","0"]};
+var expnum_ab = '1';
+function ReadCookie(o){var e=" "+document.cookie,t=e.indexOf(" "+o+"=");if(-1==t&&(t=e.indexOf(";"+o+"=")),-1==t||""===o)return"";var n=e.indexOf(";",t+1);return-1==n&&(n=e.length),unescape(e.substring(t+o.length+2,n))}function SetCookie(o,e,t,n){var i=new Date,c=new Date;null!=t&&0!=t||(t=1),c.setTime(i.getTime()+864e5*t),document.cookie=""!=n?o+"="+escape(e)+";expires="+c.toGMTString()+";domain="+n+";path=/":o+"="+escape(e)+";expires="+c.toGMTString()}
+function getVisitorId(){
+  var visitor_id_header = ReadCookie('AMCV_2A451D0A60775CE80A495FC0%40AdobeOrg');    
+    if (visitor_id_header!=='' && visitor_id_header!==null) {    
+      var visitorId = visitor_id_header.split('|')[4];  
+      if(typeof visitorId !== 'undefined'){
+        vid_new = parseInt(visitorId[visitorId.length-1]);
+        vid_new = vid_new%2;
+      }    
     }
-    textarea {
-      width: 45%;
-      height: 90vh;
-      padding:10px;
-      font-family: monospace;
-    }
-    #output {
-      width: 45%;
-      height: 90vh;
-      overflow: auto;
-      border: 1px solid #ccc;
-      padding: 10px;
-      background: #f9f9f9;
-    }
-  </style>
-</head>
-<body>
-  <textarea id="markdown" placeholder="">
-# 🚀 Complete Markdown Example
-
-## 📋 Text Formatting
-This is a **bold** text, *italic*, ~~strikethrough~~, and `inline code`.
-
-## 📊 Lists
-### Unordered
-- Item 1
-- Item 2
-  - Nested Item 2.1
-  - Nested Item 2.2
-    - Deep Nested 2.2.1
-
-### Ordered
-1. First
-2. Second
-   1. Nested Second 1
-   2. Nested Second 2
-
-### Task List
-- [x] Complete parser
-- [ ] Add tests
-- [ ] Write documentation
-
-## 🏗️ Code Blocks
-```javascript
-function helloWorld() {
-console.log("Hello Markdown!");
-return 42;
 }
-```
+getVisitorId();
 
-## 📦 Blockquote
-> This is a blockquote.  
-> It can span multiple lines.  
-> > And even be nested!
+function userZoneFromPincode(){
 
-## 🏆 Tables
-| Syntax      | Description | Tested |
-|-------------|-------------|--------|
-| Header      | Title       | ✅     |
-| Paragraph   | Text        | ❌     |
-| `code`      | Inline      | ⚠️     |
+  if(ReadCookie('sc_loc_pincode'))
+  var pincode = ReadCookie('sc_loc_pincode');
+else if(ReadCookie('pincode'))
+  var pincode=ReadCookie('pincode');
 
-## 🎨 Horizontal Rules
----
-***
-___
+  if(pincode){
+    var url = '/setUserzone?target=pincode_form&pincode=' + pincode;
+    var myInit = {
+      method: 'get',
+    };
+  fetch(url,myInit) 
+  .then(response=>response.json())
+  .then(response=>{
+    if(response){
+      city_id = response.city_id;
+    }
+  })
+  .catch(error=>console.log(error))
+  }
+  
+}
+userZoneFromPincode();
 
-## 🔗 Links & Images
-[My GitHub](https://github.com/ferhatgnlts)  
-![Placeholder Image](anime.webp)
+  function assign_vertical_pos(){
+    var all_child =document.getElementById('mainblcok');
+    if(all_child){
+      all_child = document.getElementById('mainblcok').children;
+      var index = 1;
+        for(var i=0;i<all_child.length;i++){
+          if(all_child[i] && all_child[i].style.display!='none'){
+            all_child[i].setAttribute('data-position',index);
+            index++;
+          }
+        }
+    }
+  }
+function hidePopup(e){
+  document.getElementById('google_widget_display_new').classList.remove('show');
+  document.getElementById('google_widget_display_new').style.display='none';
+}
+function cbplus_scen(){
+  var visitor_id = ReadCookie('AMCV_2A451D0A60775CE80A495FC0%40AdobeOrg');
+  if(visitor_id){
+    visitor_id = visitor_id.split('|')[4];
+    if(visitor_id && !isNaN(visitor_id)){
+        var last_digit = parseInt(visitor_id[visitor_id.length-1]);
+        var last_two_digit = parseInt(visitor_id.slice(-2));
+        if(!isNaN(last_digit) && !isNaN(last_two_digit)){
+          if(last_digit%2==0){
+            if(last_two_digit%10==0){
+              cb_scen = 2;
+            }else{
+              cb_scen=1;
+            }
+          }else{
+            var sum = 0;
+            for(var i=0;i<visitor_id.length;i++){
+              sum+=parseInt(visitor_id[i]);
+            }
+            if(sum%9==0){
+              cb_scen = 3;
+            }else{
+              cb_scen = 4;
+            }
+          }
+        }
+    }
+  }
+}
+var test_senarios_val = [];
+function ab_test(){
+    var visitor_id_header = ReadCookie('AMCV_2A451D0A60775CE80A495FC0%40AdobeOrg');    
+    if (visitor_id_header!=='' && visitor_id_header!==null) { 
+    var visitorId = visitor_id_header.split('|')[4]; 
+    visitorId = visitorId.slice(-2);
+    var scenario;
+    if(ab_test_scenarios!==undefined){
+      var test_scenarios_keys = Object.keys(ab_test_scenarios);
+      for(var index=0;index<test_scenarios_keys.length;index++){
+      var feature_key = test_scenarios_keys[index];
+      scenario  = ab_test_scenarios[feature_key];
+      var remainder = visitorId%100;
+      var floor =  0; 
+      var ceil;
+      for(var i=0;i<scenario.length;i++){
+        ceil = floor+parseInt(scenario[i]);
+        if(remainder<=ceil){
+          test_senarios=i;
+          break;
+        }
+        floor = ceil;
+      }
+      var obj={};
+      obj[feature_key]=test_senarios;
+      test_senarios_val.push(obj);
+      // test_senarios_val.push({[feature_key]:test_senarios});
+    }
+    }
+  }
+}
+ab_test();
+cbplus_scen();
+</script>
+    
+    <title>Online Shopping Site India - Shop Online for men, women and kids fashion, home, kitchen, health, sports and more products at ShopClues</title>
+<!-- Meta data information starts-->
+  
+     <meta name="Description" content="Online shopping site in India - Shop Online for men, women and kids fashion, home décor and furnishings, kitchen apppliances, health and sports products at best prices from ShopClues. Easy Return & Replacement Policy!"/>
+  <meta name="keywords" content="online shopping india, mobiles phones, electronics, refrigerators online, shoes, footwear online shopping, laptops, tablets, kitchen appliances store, fashion, prices, shopclues.com"/>
+<!-- Meta data information end-->
+<!-- app Linking meta tag for fb start-->
+<meta property="al:android:package" content="com.shopclues"/>
+<meta property="al:android:url" content="https://m.shopclues.com/"/>
+<meta property="al:web:url" content="https://m.shopclues.com/"/>
+<!-- app Linking meta tag for fb end-->
 
-## 😄 Emojis
-Built-in: :smile: :thumbsup: :heart:  
-Custom: :coffee: :warning: :computer:
+    <link rel="canonical" href="https://www.shopclues.com/" />
+<input type="hidden" id="product_id" lid= mid= value=>
+<!-- DTM script -->
+<script src="//assets.adobedtm.com/24de6be1a1ad/5da2523ee068/launch-8c41c668eba6.min.js" async></script><!-- Shopclues Tracking script start-->
+<!-- Shopclues Tracking script ends-->
+<!-- Script of google ads starts -->
+<script defer async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script defer async="async" src="https://www.google.com/adsense/search/ads.js"></script>
+<script type="text/javascript" charset="utf-8">
+  (function(g,o){g[o]=g[o]||function(){(g[o]['q']=g[o]['q']||[]).push(
+  arguments)},g[o]['t']=1*new Date})(window,'_googCsa');
+</script>
+<script type="text/javascript" charset="utf-8">
+  var percentage_z = '["0","100","0","0"]';
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+  function replace_special_symbol(str) {
+    str=str.replace(/&#039;/g, "'");
+    str = str.replace(/['|,|&|@|%|;|+|=|#|!|^|*|(|)|-]/gi, "").replace(/  +/g, ' ');
+    str = str.substring(0,40);
+    return str;
+  }
+  var secure_url = 'https://smo.shopclues.com/';
+  var login_strip_url = 'https://login.shopclues.com/';
+  var route = 'home';
+  if(route== 'home'){
+    var meta_resp='';
+  }
+</script>
+<!-- Script of google ads ends -->
 
-## 🛠️ Advanced
-### Escaped Chars
-\\*Not italic\\*, \\`not code\\`
+</head>
 
-### Mixed Formatting
-**Bold *italic* combo** inside a [link](https://example.com) with `code`.
-</textarea>
-  <div id="output"></div>
+<body>
+<div class="side_bar" id='side_bar_wrapper'>
+</div>
+<div id="responseLoading" style="display: none;">
+  <div class="circleSpin">
+    <div class="circle"></div>
+  </div>
+</div>
+<!-- App installation bannner starts-->
+<div class="app_installed" id="new_androidAppPopup" style="display:none"><a class="cross_app" onclick=this.parentNode.style.display="none"></a><a target="_blank" href=" https://scllink.page.link/ApIn"><span class="app_icon"><img width="24" height="36" alt="" src="//images2.shopclues.com/images/ui/icon_app.svg"></span><div class="app_info"><h2>Get the lightest shopping app</h2><p>Join 1 crore+ happy users!</p><span class="installed_not"></span></div><span class="btn orange">Install</span></a></div>    <!-- Your Custom Soft Ask Div -->
+<!-- Voice Search Starts -->
+        <div  id="voice_popup" class="popup_box" style="display:none;">
+          <div class="model_box voice_srch">
+            <i id="voice_close_popup" class="close"></i>
+            <span id="voice_popup_text" class="h1">Didn't catch that. Try speaking again.</span>
+            <div id="voice_popup_inst" class="voice_st">
+              <p id="try_again_text" style="display:none;">Tap To Try Again</p>
+              <i id="voice_pop_i" class=""></i>
+              <span></span>
+            </div>
+          </div>
+        </div>
+  <input type="hidden" id="hidden_voice_search" value="">
+<!-- Voice Search ends -->
 
-  <script type="module" src="emojis.js"></script>
-  <script type="module" src="main.js"></script>
+<!-- App installation bannner ends -->
+
+            <script defer async>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', "UA-53965372-1", 'auto');
+
+    var visitor_id_header = ReadCookie('AMCV_2A451D0A60775CE80A495FC0%40AdobeOrg');    
+    if (visitor_id_header!=='' && visitor_id_header!==null) {    
+      var visitorId = visitor_id_header.split('|')[4];  
+      if(typeof visitorId !== 'undefined'){    
+        ga('set', 'dimension1', visitorId);    
+      }    
+    }
+    function gaDetail(seo_name,type) {
+        if (typeof ga != 'undefined' && ga != null) {
+            if (typeof  seo_name != 'undefined') {
+                ga('send', 'event', type, 'click', seo_name);
+            }
+        }
+  }
+    </script>
+
+
+<div class="header_wrap nospace" itemscope itemtype="https://schema.org/Organization">
+<meta itemprop="name" content="ShopClues.com">
+<header id="navbar" class="header-sc">
+     <ul>
+      <li>
+                 <a href="javascript:void(0);" id='side_bar_icon' class="icon i_menuT">
+          <i></i>
+        </a>
+         </li>
+    </ul>
+    <span class="logo full">
+      <a itemprop="url" href="https://m.shopclues.com/"  title="Shopclues"> <img itemprop="logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODIzIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDgyMyAxNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTY3LjkzMi43OTJjMzcuNDMyIDAgNjcuNzg2IDMxLjE1IDY3Ljc1MiA2OS41Mi0uMDYgMzcuNzA3LTMwLjY2NiA2OC42OS02Ny45MjUgNjguNjgzLTM3LjQ0NiAwLTY3Ljc5OS0zMS4xNDktNjcuNzU5LTY5LjUyQy4wMDcgMzEuNzgyIDMwLjY2Ljc4NSA2Ny45MzIuNzkyeiIgZmlsbD0iIzA1QTJCMyIvPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMTIuNDY0IDM4LjYzYy0uNTM5IDEuMDE4LTMxLjc3IDQ0Ljk3Ni00OS44MTUgNjUuNDMxLTQuMjcxIDQuODM1LTExLjQzNyA0Ljk2MS0xNS43MDItLjI1Mi05Ljg2Ny0xMi4wNS0xNy44MzgtMjIuNTExLTI3LjA5My0zNy4wNDgtMS4yNzctMS45OTUtMi44NTQtNC44NzUtLjU2Ni03LjM5NSAwIDAgMi41MjItMi44MDcgNy45ODUgMS4wNSA2Ljk0IDQuODk1IDE0LjMyNSA5LjY3NyAyMS4xMzggMTQuMjE5IDMuODk5IDIuNTkzIDYuMzg3IDIuODIgOS45OC4wMzNDNzMuNTI4IDYyLjk2MyAxMDcuNDYgMzcuNzIgMTA5LjM5IDM2LjU0MmMzLjQwNi0yLjA2OCAzLjgzOS41MiAzLjAyNyAyLjA4OWguMDQ3eiIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMTIuNDY0IDM4LjYzYy0uNTM5IDEuMDE4LTMxLjc3IDQ0Ljk3Ni00OS44MTUgNjUuNDMxLTQuMjcxIDQuODM1LTExLjQzNyA0Ljk2MS0xNS43MDItLjI1Mi05Ljg2Ny0xMi4wNS0xNy44MzgtMjIuNTExLTI3LjA5My0zNy4wNDgtMS4yNzctMS45OTUtMi44NTQtNC44NzUtLjU2Ni03LjM5NSAwIDAgMi41MjItMi44MDcgNy45ODUgMS4wNSA2Ljk0IDQuODk1IDE0LjMyNSA5LjY3NyAyMS4xMzggMTQuMjE5IDMuODk5IDIuNTkzIDYuMzg3IDIuODIgOS45OC4wMzNDNzMuNTI4IDYyLjk2MyAxMDcuNDYgMzcuNzIgMTA5LjM5IDM2LjU0MmMzLjQwNi0yLjA2OCAzLjgzOS41MiAzLjAyNyAyLjA4OWguMDQ3eiIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggZD0iTTc5NS43MDIgNjIuMTk5Yy0xLjc3LjUyNS0zLjQyIDEuMzktNC44NTcgMi41NDdhMTAuOTcgMTAuOTcgMCAwIDAtMy4wMTQgMy45OSAxMy4xODQgMTMuMTg0IDAgMCAwLTEuMDM4IDUuMzIgMTEuODA1IDExLjgwNSAwIDAgMCAxLjI3MSA1LjY0NiAxMS4zODUgMTEuMzg1IDAgMCAwIDMuMzggMy45MyAxNC41MyAxNC41MyAwIDAgMCA0LjkwMyAyLjI4OCAyMy41MjUgMjMuNTI1IDAgMCAwIDExLjgxIDAgMTQuMjg2IDE0LjI4NiAwIDAgMCA0Ljg3Ny0yLjI4OCAxMS4xNzcgMTEuMTc3IDAgMCAwIDMuMzI3LTMuOTIzIDEyLjQ4OCAxMi40ODggMCAwIDAgMS4yMjQtNS43NiAxMi4yNTUgMTIuMjU1IDAgMCAwLTEuMjUxLTUuNzEyIDExLjI5OSAxMS4yOTkgMCAwIDAtMy4zMjctMy45MjMgMTQuNjQyIDE0LjY0MiAwIDAgMC00Ljg4My0yLjI4OCAyMi40MTUgMjIuNDE1IDAgMCAwLTUuODc1LS43NTIgMjIuMDYgMjIuMDYgMCAwIDAtNi41MjEuODkybC0uMDI2LjAzM3ptLTExLjc4NCAxOS41MjVhMTcuMjIxIDE3LjIyMSAwIDAgMS0xLjU3Ni03LjUxNSAxOC4yOTEgMTguMjkxIDAgMCAxIDEuNTUtNy43NCAxNS42NCAxNS42NCAwIDAgMSA0LjI3OC01LjU4NyAxOC40OTMgMTguNDkzIDAgMCAxIDYuMzQ3LTMuMzY1IDI3LjAxMyAyNy4wMTMgMCAwIDEgMTUuMzAzIDAgMTguODMxIDE4LjgzMSAwIDAgMSA2LjI5NSAzLjMyNSAxNS44MjQgMTUuODI0IDAgMCAxIDQuMzA0IDUuNTQ2IDE5LjMzNCAxOS4zMzQgMCAwIDEgMCAxNS4zMjkgMTUuODY0IDE1Ljg2NCAwIDAgMS00LjMwNCA1LjU0IDE4LjQyIDE4LjQyIDAgMCAxLTYuMjk1IDMuMzI1IDI2LjExMSAyNi4xMTEgMCAwIDEtNy42MDUgMS4wOSAyNS43OSAyNS43OSAwIDAgMS03LjY3OC0xLjExNyAxOC43NzMgMTguNzczIDAgMCAxLTYuMzItMy4zMjUgMTYuMDY2IDE2LjA2NiAwIDAgMS00LjMwNS01LjQ4NmwuMDA2LS4wMnptMzYuOTAxIDM0LjEwOC0uMDc0LS4yMTNhMTQuNjM1IDE0LjYzNSAwIDAgMC0yLjkyLTQuNzY4IDE0Ljg5IDE0Ljg5IDAgMCAwLTQuMjY1LTMuMTcyIDIzLjgwOSAyMy44MDkgMCAwIDAtNS4wODQtMS44MDJsLS44MzEtLjE4Ni4wNzMgNS4zMi41MTkuMTJjMS4zMzUuMzAyIDIuNjI0Ljc4IDMuODMyIDEuNDIzYTExLjgzOCAxMS44MzggMCAwIDEgMi45ODEgMi4yODcgOS45NTcgOS45NTcgMCAwIDEgMS45NDkgMy4xMTljLjM3OSAxLjEzNC41NjggMi4zMjMuNTU5IDMuNTE4YTExLjU3NiAxMS41NzYgMCAwIDEtMS4zMyA1LjgxMiAxMC40MSAxMC40MSAwIDAgMS0zLjQ1MyAzLjY3MSAxNS4yOTkgMTUuMjk5IDAgMCAxLTQuOTU3IDEuOTk1Yy0zLjg1Mi44MzMtNy44NC43OTktMTEuNjc3LS4wOTlhMTQuNzkxIDE0Ljc5MSAwIDAgMS00Ljg1MS0yLjE1NSAxMC41OTQgMTAuNTk0IDAgMCAxLTMuMzI2LTMuNjQ0IDEwLjgxNCAxMC44MTQgMCAwIDEtMS4yMTEtNS4yNzQgMTUuODY4IDE1Ljg2OCAwIDAgMSAuNDUyLTMuOTQzIDkuNTQ1IDkuNTQ1IDAgMCAxIDEuMjMxLTIuNjYxYzEuMjExLTEuNzc1IDMuMzI3LTMuMDA1IDYuMjA4LTMuNjc3bC41MzktLjExM3YtLjM5MmguMDY2di00LjgxNWwtLjc3MS4xMmExNS40MjYgMTUuNDI2IDAgMCAwLTUuMTUgMS43MDIgMTIuNDA3IDEyLjQwNyAwIDAgMC0zLjc3OSAzLjE2NSAxMi44NDggMTIuODQ4IDAgMCAwLTEuOTIzIDMuMzcyYy0uMjE3LjQ5LS40MDYuOTkyLS41NjYgMS41MDNhMTguNDgzIDE4LjQ4MyAwIDAgMC0uNzU4IDUuMzggMjEuNTc4IDIxLjU3OCAwIDAgMCAxLjA3MSA2LjkzNiAxNC4xMTYgMTQuMTE2IDAgMCAwIDMuNTA2IDUuNjEzIDE2LjQ5OCAxNi40OTggMCAwIDAgNi4xODEgMy43MjQgMjcuNTU5IDI3LjU1OSAwIDAgMCA5LjA3NiAxLjMzYzIuNTMuMDEyIDUuMDUzLS4yODUgNy41MTEtLjg4NWExOC4yMzcgMTguMjM3IDAgMCAwIDYuMzM1LTIuODU5IDE0LjQ5MyAxNC40OTMgMCAwIDAgNC4zNzEtNS4xMTQgMTYuMTQ5IDE2LjE0OSAwIDAgMCAxLjYxNy03LjQ4MSAxOC40NzMgMTguNDczIDAgMCAwLTEuMDg1LTYuNTkxIDIuNjczIDIuNjczIDAgMCAwLS4xMDYtLjIzOWwuMDQtLjAyN3ptLTM3LjMzMy03NS4wMjdoMzcuMzc5di0uMzMyaC4xOHYtNC43ODhoLTI4LjQ4NGwyOC4zMDQtMTAuNDQxdi0uNDE5bC4xOC0uMDY2di00LjE3bC0yNy44NTItMTAuMjQxaDI3LjY3MnYtLjY2NWguMThWNC44OTVINzgzLjN2Ni4zNTdsLjE4Ni4wNnYuNTU5TDgxMy41IDIyLjgzbC0zMC4yIDExLjIyNXY2LjM5MWguMTg2VjQwLjgwNXptLTU1LjQzNy00LjgyOGMwLTcuMjI4IDAtMTMuNDg2IDYuODQ3LTEzLjQ4NiA2Ljg0NiAwIDYuODM5IDcuOTggNi44MzkgMTMuODc5IDAgMi45MzIuOTg1IDMuOTEgMy45MTMgMy45MWgxNS40NTZjMi45MzQgMCAzLjkxMi0xLjk1NSAzLjkxMi00Ljg4MSAwLTIxLjExNC0xMC4xNjctMzUuMTkzLTMxLjA5OC0zNS4xOTMtMTkuNTU1IDAtMjkuMzM2IDEzLjA5NC0yOS4zMzYgMzAuNjkgMCAxNS40NDIgMS45NTcgMjIuNjc4IDIwLjczMyA0NC43NjMgMTAuMzY2IDEyLjEyMyAxNi4yMzQgMjAuMTM2IDE2LjIzNCAyNy41NjUgMCA3LjIyOCAwIDEzLjQ3OS02Ljg0NiAxMy40NzktNi44NDcgMC02Ljg0LTcuOTgtNi44NC0xMy44NzggMC0yLjkzMy0uOTg1LTMuOTEtMy45MTItMy45MWgtMTUuNDYzYy0yLjkzNCAwLTMuOTEyIDEuOTU0LTMuOTEyIDQuODg3IDAgMjEuMTIxIDEwLjE2NiAzNS4xOTMgMzEuMDk4IDM1LjE5MyAxOS41NTUgMCAyOS4zMzUtMTMuMDk0IDI5LjMzNS0zMC42OTcgMC0xNS40MzUtMS43NTYtMjIuNjc3LTIwLjUzMi00NC43NjMtMTAuMzczLTEyLjExNi0xNi40MzQtMjAuMTMtMTYuNDM0LTI3LjU1OGguMDA2em0tNzguNDExIDEwMi4wNGg0Mi4yMTZjMi45MzUgMCAzLjkxMy0uOTc3IDMuOTEzLTMuOTF2LTE0LjQ3MWMwLTIuOTMzLS45NzgtMy45MDQtMy45MTMtMy45MDRoLTE4Ljc3NmMtMy45MTIgMC0zLjkxMiAwLTMuOTEyLTMuOTFWODAuOTM5YzAtMy45MSAwLTMuOTEgMy45MTItMy45MWgxOC43NzZjMi45MzUgMCAzLjkxMy0uOTc4IDMuOTEzLTMuOTFWNTguNjQ3YzAtMi45MjYtLjk3OC0zLjkwNC0zLjkxMy0zLjkwNGgtMTguNzc2Yy0zLjkxMiAwLTMuOTEyIDAtMy45MTItMy45MVYyNy4zNzJjMC0zLjkwNCAwLTMuOTA0IDMuOTEyLTMuOTA0aDE4Ljc3NmMyLjkzNSAwIDMuOTEzLS45NzcgMy45MTMtMy45MVY1LjA5NGMwLTIuOTMzLS45NzgtMy45MS0zLjkxMy0zLjkxaC00Mi4yMzZjLTIuOTQxIDAtMy45MTIuOTc3LTMuOTEyIDMuOTF2MTI5LjAxM2MwIDMuOTEgMS45NTYgMy45MSAzLjkxMiAzLjkxaC4wMnpNNjEwLjUyMiA1LjA5NHY5NS41ODljMCA5Ljc2OSAwIDE2LjAyLTYuODQ2IDE2LjAycy02Ljg0Ni02LjI1MS02Ljg0Ni0xNi4wMlY1LjA5NGMwLTIuOTMzLS45NzktMy45MS0zLjkxMy0zLjkxaC0xNS42NDJjLTIuOTM0IDAtMy45MTIuOTc3LTMuOTEyIDMuOTF2OTQuNzk4YzAgMjkuNTIgMTAuNzU4IDM5LjEwMyAzMC4zMTMgMzkuMTAzczMwLjI5My05Ljc4MyAzMC4yOTMtMzkuMTAzVjUuMDk0YzAtMi45MzMtLjk3MS0zLjkxLTMuOTEyLTMuOTFoLTE1LjYzNmMtMi45MzQgMC0zLjkxMi45NzctMy45MTIgMy45MWguMDEzem0tODcuMjI3IDEzMi45MjNoNDEuMjUyYzIuOTM0IDAgMy45MTktLjk3NyAzLjkxOS0zLjkxdi0xNC40NzFjMC0yLjkzMy0uOTg1LTMuOTA0LTMuOTE5LTMuOTA0aC0xNy41ODVjLTQuMTA1IDAtNC4xMDUgMC00LjEwNS00LjEwM1Y1LjA5NGMwLTIuOTMzLS45NzItMy45MS0zLjkxOS0zLjkxaC0xNS42NDNjLTIuOTM0IDAtMy45MDUuOTc3LTMuOTA1IDMuOTF2MTI5LjAxM2MwIDIuOTMzLjk3MSAzLjkxIDMuOTA1IDMuOTF6TTQ3MC41IDM4LjMyNWMwLTkuNzcgMC0xNi4wMzQgNi44NDctMTYuMDM0IDYuODQ2IDAgNi44NDYgNi4yNjUgNi44NDYgMTYuMDM0djUuODU5YzAgMi45MzkuOTcxIDMuOTEgMy45MTIgMy45MWgxNS42MzZjMi45NDEgMCAzLjkxMi0uOTcxIDMuOTEyLTMuOTF2LTUuMDg4QzUwNy42NTMgOS43NyA0OTYuOTAxIDAgNDc3LjM0NyAwYy0xOS41NTUgMC0zMC4zNCA5LjU4My0zMC4zNCAzOS4wOTZWOTkuODhjMCAyOS41MiAxMC43NTggMzkuMTAyIDMwLjMyIDM5LjEwMiAxOS41NjEgMCAzMC4zMDYtOS43ODIgMzAuMzA2LTM5LjEwMnYtNC44ODJjMC0yLjkzMi0uOTcxLTMuOTEtMy45MTItMy45MWgtMTUuNjM2Yy0yLjk0MSAwLTMuOTEyLjk3OC0zLjkxMiAzLjkxdjUuNjczYzAgOS43NjkgMCAxNi4wMi02Ljg0NiAxNi4wMi02Ljg0NyAwLTYuODQ3LTYuMjUxLTYuODQ3LTE2LjAyVjM4LjMyNWguMDJ6TTM5OC4xNDQgMjYuNGMwLTMuOTEgMC0zLjkxIDMuOTEyLTMuOTEgOS43NzQgMCA5Ljc3NCA5Ljk3NSA5Ljc3NCAxOS45NXY4Ljc5MmMwIDkuOTc1IDAgMTkuOTUtOS43NzQgMTkuOTUtMy45MTIgMC0zLjkxMiAwLTMuOTEyLTMuNTE4VjI2LjQwMXptMzcuMTUzIDI3LjE3M3YtMTMuM2MwLTI5LjMyOC0xMy42ODctMzkuMDk3LTMzLjI2OC0zOS4wOTdoLTIzLjQ0N2MtMi45MzQgMC0zLjkxMi45NzgtMy45MTIgMy45MVYxMzQuMWMwIDIuOTMzLjc4NSAzLjkxIDMuOTEyIDMuOTFoMTUuNjQ5YzIuNzM1IDAgMy45MTMtLjk3NyAzLjkxMy0zLjkxVjk2LjM4YzAtMy45MSAwLTMuOTEgMy45MTItMy45MSAxOS41NTQgMCAzMy4yNjctOS43NzUgMzMuMjY3LTM4Ljg5NmgtLjAyNnptLTk1LjgxLTE0Ljg1N3Y2MS45NjZjMCA5Ljc2OSAwIDE2LjAyLTYuODQ3IDE2LjAyLTYuODQ2IDAtNi44NC02LjI1MS02Ljg0LTE2LjAyVjM4LjcxN2MwLTkuOTc1IDAtMTYuMjI2IDYuODQtMTYuMjI2czYuODQ3IDYuMjU4IDYuODQ3IDE2LjIyNnptMjMuNDY2IDYxLjE4MVYzOS4zMDNjMC0yOS4zMjctMTAuNzUyLTM5LjA5Ni0zMC4zMTMtMzkuMDk2cy0zMC4zMTMgOS41NzYtMzAuMzEzIDM5LjA5NnY2MC41OWMwIDI5LjUyIDEwLjc1OSAzOS4xMDMgMzAuMzEzIDM5LjEwMyAxOS41NTUgMCAzMC4zMTMtOS43ODMgMzAuMzEzLTM5LjEwM3YuMDA3em0tOTEuOTMxIDM4LjExOWgxNS42MzZjMS45NTYgMCAzLjkxMiAwIDMuOTEyLTMuOTFWNS4wOTRjMC0yLjkzMy0uOTc4LTMuOTEtMy45MTItMy45MWgtMTUuNjM2Yy0yLjkyNyAwLTMuOTA1Ljk3Ny0zLjkwNSAzLjkxdjQ1Ljc0YzAgMy45MSAwIDMuOTEtMy45MTIgMy45MWgtNS44NjJjLTMuOTEyIDAtMy45MTIgMC0zLjkxMi0zLjkxVjUuMDk0YzAtMi45MzMtLjk3OC0zLjkxLTMuOTEzLTMuOTFoLTE1LjY1NWMtMi45MjggMC0zLjkxMi45NzctMy45MTIgMy45MXYxMjkuMDEzYzAgMy45MSAxLjk5NiAzLjkxIDMuOTEyIDMuOTFoMTUuNjU1YzEuOTU3IDAgMy45MTMgMCAzLjkxMy0zLjkxVjgwLjkwNmMwLTMuOTEgMC0zLjkxIDMuOTEyLTMuOTFoNS44NjJjMy45MTIgMCAzLjkxMiAwIDMuOTEyIDMuOTF2NTMuMjAxYzAgMy45MSAxLjk1NiAzLjkxIDMuOTA1IDMuOTF6bS04Ni44MjctMTAyLjA0YzAtNy4yMjggMC0xMy40ODYgNi44NTMtMTMuNDg2czYuODQ2IDcuOTggNi44NDYgMTMuODc5YzAgMi45MzIuOTcyIDMuOTEgMy45MDYgMy45MWgxNS40NDljMi45MzQgMCAzLjkwNi0xLjk1NSAzLjkwNi00Ljg4MSAwLTIxLjExNC0xMC4xNi0zNS4xOTMtMzEuMDg1LTM1LjE5My0xOS41NjggMC0yOS4zNDIgMTMuMDk0LTI5LjM0MiAzMC42OSAwIDE1LjQ0MiAxLjk2MyAyMi42NzggMjAuNzM5IDQ0Ljc2MyAxMC4zNTkgMTIuMTIzIDE2LjIyOCAyMC4xMzYgMTYuMjI4IDI3LjU2NSAwIDcuMjI4IDAgMTMuNDc5LTYuODQ3IDEzLjQ3OS02Ljg0NiAwLTYuODQ2LTcuOTgtNi44NDYtMTMuODc4IDAtMi45MzMtLjk3OC0zLjkxLTMuOTA2LTMuOTFIMTY0LjY0Yy0yLjkzNCAwLTMuOTEyIDEuOTU0LTMuOTEyIDQuODg3IDAgMjEuMTIxIDEwLjE2NiAzNS4xOTMgMzEuMDk4IDM1LjE5MyAxOS41NTUgMCAyOS4zMjktMTMuMDk0IDI5LjMyOS0zMC42OTcgMC0xNS40MzUtMS43NTctMjIuNjc3LTIwLjUzMy00NC43NjMtMTAuMzU5LTEyLjExNi0xNi40MjctMjAuMTMtMTYuNDI3LTI3LjU1OHptNTgzLjI0MyA5NS45NTVoNy4wNjZ2Ny4wNjNoLTcuMDY2di03LjA2M3oiIGZpbGw9IiMxRDFEMUIiLz4KPC9zdmc+Cg==" alt="Shopclues"> </a>
+    </span>
+    
+   
+    <div class="merchant_nme" style="display: none;">
+              <p id="plp_title" class="plp_title"></p>
+           <p></p>
+    </div>
+
+
+  <!-- <a href="javascript:void(0);"  id='side_bar_icon'><i></i></a> -->
+ 
+  <!-- HEADER RIGHT SIDE ICONS STARTS-->
+  <ul>
+          <li>
+      <a href="javascript:void(0);" class="icon i_notify" id='notification_icon'>
+        <i><span id='notification_count' style='display:none'></span></i>
+      </a>
+      <div class="notification_content" style="display: none;" id='notification_wrapper'>
+        <div class="header_wrap">
+          <div class="fix_h">
+            <div id="bell_close" class="icon i_back">
+              <i></i>
+            </div>
+            <span class="heading"></span>
+          </div>
+        </div>
+        <div class="notification_bx" id='bell_notifications'></div>
+      </div>
+    </li>
+      <li style="display: none;"><a href="javascript:void(0);" id="search_ic" class="icon i_search btn_effect_ltbg"><i></i></a></li>
+    <!-- <li><a href="https://m.shopclues.com/play-quiz-and-win.html" id="search_ic" class="game_btn btn_effect_ltbg"><i></i></a></li> -->
+        
+    <li><a href="https://smo.shopclues.com/account" class="icon i_account"><i></i></a></li>
+    <li><a href="https://smo.shopclues.com/acart/getcart" class="icon i_cart"><i><span id='cart_count' style='display:none'></span></i></a></li>
+  </ul>
+  <!-- HEADER RIGHT SIDE ICONS ENDS-->
+  <!-- SEARCH BAR STARTS-->
+
+  
+
+</header>
+</div>
+<div class="search_bx_wrap" id="searchbxwrap">
+<div class="search_bx open" id="search_box" style="display:block">
+    <span>
+      <input type="text" id="search_input_field" value="" placeholder="What is on your mind today?"  autocomplete="off">
+      <i>
+        <input type="submit" value="" id='search_action'>
+      </i>
+      <a href="javascript:void(0);" class="icon i_backG" id='close_search_dd' style="display:none;">
+        <i class="sm"></i>
+      </a>
+      <a   href="javascript:void(0);" class="voice_ico" id='voice_record'></a>
+      <a href="javascript:void(0);" style="display: none;" id="clear_text" class="icon i_closeG"><i class="sm"></i></a>
+
+    </span>
+    <div id='search_drop_down' class='search_suggestion'></div>
+  </div>
+  </div>
+<script type="text/javascript">
+  var base_url="//m.shopclues.com/";
+  var whats_app_add_class = 0;
+  var search_text = 'What is on your mind today?';
+  var promotion_data = '0';
+  var show_qoo10_menu = '1';
+  var view_all_url_qo10 = 'https://www.qoo10.in/gmkt.inc/special/special.aspx?sid=82878&jaehuid=2026454214';
+  var qo10_menu_url = 'https://www.qoo10.in/gmkt.inc/special/special.aspx?sid=82878&jaehuid=2026482204';
+  var community_url = 'https://m.shopclues.com/hot-deal.html';
+  var mfc_time = '30000';
+  var referal_amnt = '700';
+  var lng_popup_config = '{"bottom_popup":0,"pdp_lng_slide":0}';
+  var cdn_image_path= 'https://cdn2.shopclues.com/';
+  var bell_refer;
+  var qo10_home='';
+  var qo10_home_onclick='';
+  var qo10_clp='';
+  var qo10_clp_onclick='';
+  var api_curl_base_url = 'http://api.shopclues.com/api/v11/';
+  var adzone_new= '';
+  var client_tbsl = '0';
+  var ua = window.navigator.userAgent;
+  var TB_Identifier = 'TB_SC';
+  if(ua.indexOf(TB_Identifier) >= 0 || (ReadCookie("tp_client") && ReadCookie("tp_client")=='TB_SC')){
+    client_tbsl = 1;
+    document.getElementById('voice_record').style.display = 'none';
+  }else{
+    client_tbsl = 0;
+    document.getElementById('voice_record').style.display = '';
+  }
+
+  document.getElementById('new_androidAppPopup')
+  .addEventListener('click', 
+    function(e){
+      if(typeof _satellite !== 'undefined'){
+        app_install_banner_msite = 'app_install_banner_msite'
+        _satellite.track(app_install_banner_msite);
+      }
+    }, false
+  )
+</script>
+
+
+<script>
+var is_ios=0;
+var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+var ua1 = navigator.userAgent.toLowerCase(); 
+var safari=0;
+var safariOrIos=0;
+if (ua1.indexOf('safari') != -1) { 
+  if (ua1.indexOf('chrome') > -1) {
+  //  alert("1") // Chrome
+    
+  } else {
+    //safari
+    safari=1;
+    
+  }
+}
+   if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        is_ios=1;
+    }
+
+    if(safari || is_ios){
+      safariOrIos=1;
+      document.getElementById('navbar').classList.add('ios_header');
+     document.getElementById('searchbxwrap').classList.add('ios_search');
+    }
+if(!safariOrIos){
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+      document.getElementById("search_box").style.top = "46px";
+    } else {
+      document.getElementById("navbar").style.top = "-56px";
+      document.getElementById("search_box").style.top = "0";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+}
+</script>
+<div class='mainblcok' id='mainblcok'>
+
+	<div class='b_section type_15'>
+		<div class='shd_box scroll_effect animated bx_animate' id='8909'>
+	<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	</div>
+</div>
+
+
+<div class='b_section type_1'>
+	<div class='shd_box scroll_effect animated bx_animate' id='9142'>
+		<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	</div>
+</div>
+<div class="center slider sliderwrap animated pulse b_section" id='carousel'>
+<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	<ul>
+		<li>
+			<a>
+			<img src='https://cdn2.shopclues.com/images/ui/banner_bg.jpg'>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div class='b_section type_1'>
+	<div class='shd_box scroll_effect animated bx_animate' id='11030'>
+		<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	</div>
+</div>
+
+<?php?>
+<div class='b_section type_12'>
+			<span class='heading'>		
+	</span>
+	<div class="shd_box animated bx_animate" id='6291'>
+		<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	</div>
+</div>
+<div class='b_section type_1'>
+	<div class='shd_box scroll_effect animated bx_animate' id='11031'>
+		<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	</div>
+</div>
+
+<div class='b_section type_1'>
+	<div class='shd_box scroll_effect animated bx_animate' id='10079'>
+		<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	</div>
+</div>
+
+<div class='b_section type_2'>
+			<span class='heading'>Top Trending Categories</span>
+		
+	<div class='shd_box scroll_effect animated bx_animate' id='11057'>
+	<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	</div>
+</div>
+
+
+<div class='b_section type_4' id='prsnl_5379'>
+		<span class='heading'>Recently Viewed				</span>
+	<div class='shd_box scroll_effect animated bx_animate' id='5379'>
+	<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	</div>
+</div>
+<div class="b_section type_3 _withtxt _2col" id='product_block_two'>
+    <span class="heading" id='heading_1632'>Top Handpicked Products         <a class="link" href=''>
+                    </a>
+    </span>
+    <div class="shd_box" id='1632'>
+        <div class="loader active">
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+        </div>
+    </div>
+</div>
+<div class="b_section type_3 _withtxt _2col" id='product_block_two'>
+    <span class="heading" id='heading_10787'>         <a class="link" href=''>
+                    </a>
+    </span>
+    <div class="shd_box" id='10787'>
+        <div class="loader active">
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+        </div>
+    </div>
+</div>
+<div class="b_section type_3 _withtxt _2col" id='product_block_two'>
+    <span class="heading" id='heading_11058'>         <a class="link" href=''>
+                    </a>
+    </span>
+    <div class="shd_box" id='11058'>
+        <div class="loader active">
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+        </div>
+    </div>
+</div>
+<div class="b_section type_3 _withtxt _2col" id='product_block_two'>
+    <span class="heading" id='heading_11379'>         <a class="link" href=''>
+                    </a>
+    </span>
+    <div class="shd_box" id='11379'>
+        <div class="loader active">
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+        </div>
+    </div>
+</div>
+<div class="b_section type_3 _withtxt _2col" id='product_block_two'>
+    <span class="heading" id='heading_7727'>         <a class="link" href=''>
+                    </a>
+    </span>
+    <div class="shd_box" id='7727'>
+        <div class="loader active">
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+        </div>
+    </div>
+</div>
+<div class='b_section type_2'>
+			<span class='heading'>Top-Selling Brand</span>
+		
+	<div class='shd_box scroll_effect animated bx_animate' id='11462'>
+	<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	</div>
+</div>
+
+
+<div class="b_section type_3 _withtxt _2col" id='product_block_two'>
+    <span class="heading" id='heading_9377'>         <a class="link" href=''>
+                    </a>
+    </span>
+    <div class="shd_box" id='9377'>
+        <div class="loader active">
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+            <span class="loader-dot"></span>
+        </div>
+    </div>
+</div>
+<div class='sc_blocks section yr_purchase' id="review_rating" style="display: none;">
+			<span class="sc_heading caption">Rate Your Purchase</span>
+				
+	<div class='blocks_wrap animated bx_animate' id='7793'>
+	<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	</div>
+</div>
+<div class='b_section type_4' id='prsnl_5251'>
+		<span class='heading'>More Items To Consider				</span>
+	<div class='shd_box scroll_effect animated bx_animate' id='5251'>
+	<div class="loader active">
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+			<span class="loader-dot"></span>
+		</div>
+	</div>
+</div></div><script>
+    var home_blocks_gid = [{"gid":"8909","display_id":"55","position":"5","blk_name":"","api_url":"8909","api_params":""},{"gid":"9142","display_id":"3","position":"10","blk_name":"","api_url":"9142","api_params":""},{"gid":"11030","display_id":"3","position":"13","blk_name":"","api_url":"11030","api_params":""},{"gid":"6291","display_id":"95","position":"14","blk_name":"","api_url":"6291","api_params":""},{"gid":"11031","display_id":"3","position":"17","blk_name":"","api_url":"11031","api_params":""},{"gid":"10079","display_id":"3","position":"19","blk_name":"","api_url":"10079","api_params":""},{"gid":"11057","display_id":"6","position":"20","blk_name":"Top Trending Categories","api_url":"11057","api_params":""},{"gid":"5379","display_id":"14","position":"29","blk_name":"Recently Viewed","api_url":"5379","api_params":""},{"gid":"1632","display_id":"127","position":"30","blk_name":"Top Handpicked Products","api_url":"1632","api_params":""},{"gid":"10787","display_id":"127","position":"35","blk_name":"","api_url":"10787","api_params":""},{"gid":"11058","display_id":"127","position":"45","blk_name":"","api_url":"11058","api_params":""},{"gid":"11379","display_id":"127","position":"65","blk_name":"","api_url":"11379","api_params":""},{"gid":"7727","display_id":"127","position":"70","blk_name":"","api_url":"7727","api_params":""},{"gid":"11462","display_id":"6","position":"72","blk_name":"Top-Selling Brand","api_url":"11462","api_params":""},{"gid":"9377","display_id":"127","position":"85","blk_name":"","api_url":"9377","api_params":""},{"gid":"7793","display_id":"88","position":"139","blk_name":"Rate Your Purchase","api_url":"7793","api_params":""},{"gid":"5251","display_id":"65","position":"210","blk_name":"More Items To Consider","api_url":"http:\/\/api.shopclues.com\/api\/v11\/personalization","api_params":"32,6,7,8"}];
+    var hash_jump_to_block_id = '{"126":"product_block_four","125":"product_block_three","127":"product_block_two"}'
+    var img_path = 'https://cdn2.shopclues.com/'; 
+    var secure_url = 'https://smo.shopclues.com/';
+    var url_frontend = "//m.shopclues.com/";
+    var home_page_user_segment = {"FREE_SHIPPING":{"image":"\/\/images2.shopclues.com\/images\/ui\/free_ship.png","heading":"You are eligible for Free Shipping","to_show":1,"text":"You are now eligible for Free Shipping, applicable on selective products","clickurl":""},"FREE_COD":{"image":"\/\/images2.shopclues.com\/images\/ui\/zero_cod.png","heading":"Zero COD Processing Fee","to_show":1,"text":"You are now eligible for Free COD, applicable on selective products","clickurl":""},"FREE_SHIPPING_PREPAID":{"image":"\/\/images2.shopclues.com\/images\/ui\/free_ship.png","heading":"Free Shipping on Prepaid Order","to_show":1,"text":"You are now eligible for Free Shipping on Prepaid Ordes, applicable on selective products","clickurl":""},"DM_OFFER":{"image":"\/\/images2.shopclues.com\/images\/ui\/p_discount.png","heading":"Personalized Discount","to_show":1,"text":"You are now eligible for special offer, applicable on selective products","clickurl":"https:\/\/msmoke.shopclues.com\/lifestyle-sale-13.html?dm_offer=cross_category_bigsale"},"CB_OFFER":{"image":"\/\/images2.shopclues.com\/images\/ui\/vip_club_icon2x.png","heading":"Congratulations!","to_show":0,"text":"You are now eligible for special cashback"},"PREPAID40":{"image":"","heading":"Congratulations) not found.","to_show":1,"text":"Get extra Rs.40 off on PREPAID Orders above Rs.99 by using coupon code 'PREPAID40'","clickurl":""},"PREPAID20":{"image":"","heading":"Congratulations!","to_show":1,"text":"Get extra Rs.20 off on PREPAID Orders above Rs.99 by using coupon code 'PREPAID20'","clickurl":""},"PREPAID50":{"image":"","heading":"Congratulations!","to_show":1,"text":"Get extra Rs.50 off on PREPAID Orders above Rs.99 by using coupon code 'PREPAID50'","clickurl":""},"PREPAID30":{"image":"","heading":"Congratulations!","to_show":1,"text":"Get extra Rs.30 off on PREPAID Orders above Rs.99 by using coupon code 'PREPAID30'","clickurl":""},"VIP_GOLD":{"image":"\/\/images2.shopclues.com\/images\/ui\/vip_gold_icon.png","heading":"VIP GOLD Member","to_show":1,"text":"Exclusive Offer!!! Get instant discount on every purchase","clickurl":"https:\/\/msmoke.shopclues.com\/myclubmembership"},"BDAYEXTRA10":{"image":"","heading":"Congratulations!","to_show":1,"text":"Flat10% Off On Cart. Max Upto Rs.100 Only For VIP Members.","clickurl":""},"BDAYEXTRA10VIP":{"image":"","heading":"Congratulations!","to_show":1,"text":"Flat10% Off On Cart. Max Upto Rs.100 Only For VIP Members.","clickurl":""},"BDAYEXTRA10VIPG":{"image":"","heading":"Congratulations!","to_show":1,"text":"Flat10% Off On Cart. Max Upto Rs.100 Only For VIP Members.","clickurl":""}};
+    var url_frontend_wholesale = "https://wholesale.shopclues.com/"; 
+    var meta_resp='';
+    var zettata_threshold = 4;
+    // var route = 'home/react_partial_views/';
+    var banner_blocks_gid = [{"gid":"1013","display_id":"1","position":"12","blk_name":"Hero Banners","api_url":"1013","api_params":""}];
+    var seo_name = 'm.shopclues.com';
+    var type = 'Home';
+    var language_popup='';
+    var recently_viewed_ab = '';
+    var personalization_blocks_ab='';
+    var search_recommend_home='';
+    var new_deals_ab = '';
+    var search_deal_ab = '';
+    var add_cart_block_ab='';
+    var personalize_diversity='';
+    var hero_banner_scroll;
+    // var hero_banner_scroll_value='';
+    var element_impression='';
+    var element_impression_new = '';
+    var track1=0;
+    var track2=0;
+    var track3=0;
+    var element_impression1;
+    var element_impression2;
+    var element_impression3;
+    var qo10_home='';
+    var qo10_home_onclick='';
+    var qo10_clp='';
+    var qo10_clp_onclick='';
+    var home_page_city_tracking_gid=[915,1013,1444];
+    var pincode_value='';
+    var city_value='';
+    gaDetail(seo_name,type);
+</script>
+ 
+<footer style='display:'>
+  
+  <div id="know_more" class="know_more" onclick="fullFooter()"  >Know more about online shopping</div>
+  <div id="mn_footer" class="mn_footer" >
+    <div class="social_icons" itemscope itemtype="https://schema.org/Organization">
+      <h6>Keep in touch</h6>
+      <ul>
+          <link itemprop="url" href="https://m.shopclues.com/">
+          <li>
+              <a itemprop="sameAs" href="//facebook.com/shopclues" class="sc_ft_facbook"></a>
+          </li>
+          <li>
+              <a itemprop="sameAs" href="//www.linkedin.com/company/shopclues" class="sc_ft_linkedin"></a>
+          </li>
+          <li>
+              <a itemprop="sameAs" href="//pinterest.com/shopclues/" class="sc_ft_pintrest"></a>
+          </li>
+          <li>
+              <a itemprop="sameAs" href="//twitter.com/shopclues" class="sc_ft_twitter"></a>
+          </li>
+          <li>
+              <a itemprop="sameAs" href="//www.youtube.com/channel/UCnxPAa_6EL5ggl0_FRq6Zjw" class="sc_ft_youtube"></a>
+          </li>
+          <li>
+              <a itemprop="sameAs" href="//plus.google.com/110218897457374040465/posts" class="sc_ft_google"></a>
+          </li>
+      </ul>
+      <a href="//twitter.com/shopclues" class="twitter"></a>
+      <a href="//facebook.com/shopclues" class="facebook"></a>
+      <a href="//www.linkedin.com/company/shopclues" class="linkedin"></a>
+      <a href="//www.youtube.com/channel/UCnxPAa_6EL5ggl0_FRq6Zjw" class="youtube"></a>
+    </div>
+    <div class="trusted_payments">
+      <h6>100% Secure and Trusted Payment</h6>
+      <img src="//images2.shopclues.com/images/ui/pgateway@2x.png" alt="" />
+    </div>
+    <div class="links">
+      <h6>Shop for</h6>
+      <div class="grp">
+        <h5 class="expand">Mobile & Tablets</h5>
+        <ul>
+          <a target="_blank" href="//m.shopclues.com/android-phones.html">Android Phones</a>
+          <a target="_blank" href="//m.shopclues.com/mobiles-smartphones.html">Smartphones</a>
+          <a target="_blank" href="//m.shopclues.com/mobiles-feature-phones.html">Feature Phones</a>
+          <a target="_blank" href="//m.shopclues.com/unboxed-mobiles.html">Unboxed Phones</a>
+          <a target="_blank" href="//m.shopclues.com/refurbished-mobiles.html">Refurbished Phones</a>
+          <a target="_blank" href="//m.shopclues.com/mobiles-tablets-tablets.html">Tablets</a>
+          <a target="_blank" href="//m.shopclues.com/mobiles-feature-phones.html">CDMA Phones</a>
+          <a target="_blank" href="//m.shopclues.com/mobiles-value-added-services.html">Value Added Services</a>
+          <a target="_blank" href="//m.shopclues.com/sell-used-mobile-phones.html">Sell Old/ Used Mobiles</a>
+          <a target="_blank" href="//m.shopclues.com/mobiles-and-tablets.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Computers</h5>
+        <ul>       
+          <a target="_blank" href="//m.shopclues.com/laptops.html">Laptops</a>
+          <a target="_blank" href="//m.shopclues.com/computer-printers.html">Printers</a>
+          <a target="_blank" href="//m.shopclues.com/routers-and-modems.html">Routers</a>
+          <a target="_blank" href="//m.shopclues.com/computers-inks-cartridges.html">Ink &amp; Toner Cartridges</a>
+          <a target="_blank" href="//m.shopclues.com/computers-monitors.html">Monitors</a>
+          <a target="_blank" href="//m.shopclues.com/video-games.html">Video Games</a>
+          <a target="_blank" href="//m.shopclues.com/computers-refurbished-gadgets.html">Unboxed &amp; Refurbished Laptops</a>
+          <a target="_blank" href="//m.shopclues.com/computers-assembled-desktops.html">Assembled Desktops</a>
+          <a target="_blank" href="//m.shopclues.com/network-data-card.html">Data Cards</a>
+          <a target="_blank" href="//m.shopclues.com/computers.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">TV, Audio &amp; Large Appliances</h5>
+        <ul>        
+          <a target="_blank" href="//m.shopclues.com/speaker-systems.html">Laptops</a>
+          <a target="_blank" href="//m.shopclues.com/tvs.html">TVs &amp; DTH</a>
+          <a target="_blank" href="//m.shopclues.com/home-theater-systems.html">Home Theatre Systems</a>
+          <a target="_blank" href="//m.shopclues.com/hidden-cameras.html">Hidden Cameras &amp; CCTVs</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-refrigerators.html">Refrigerators</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-washing-machines.html">Washing Machines</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-air-conditioners.html">Air Conditioners</a>
+          <a target="_blank" href="//m.shopclues.com/cameras-and-accessories.html">Cameras</a>
+          <a target="_blank" href="//m.shopclues.com/speaker-systems.html">Speakers</a>
+          <a target="_blank" href="//m.shopclues.com/tv-large-appliances-and-camera.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Mobile &amp; Laptop Accessories</h5>
+        <ul>        
+          <a target="_blank" href="//m.shopclues.com/audio-accessories-headphones.html">Headphones</a>
+          <a target="_blank" href="//m.shopclues.com/mobile-accessories-power-banks.html">Power Banks</a>
+          <a target="_blank" href="//m.shopclues.com/computer-backpack.html">Backpacks</a>
+          <a target="_blank" href="//m.shopclues.com/case-and-cover-10.html">Mobile Cases &amp; Covers</a>
+          <a target="_blank" href="//m.shopclues.com/pen-drives.html">Pen Drives</a>
+          <a target="_blank" href="//m.shopclues.com/storage-devices-external-hard-disks.html">External Hard Disks</a>
+          <a target="_blank" href="//m.shopclues.com/electronic-accessories-computer-mouse.html">Mouse</a>
+          <a target="_blank" href="//m.shopclues.com/mobile-smart-watches-and-fitness-bands.html">Smart Watches &amp; Fitness Bands</a>
+          <a target="_blank" href="//m.shopclues.com/storage-devices-microsd-cards.html">MicroSD Cards</a>
+          <a target="_blank" href="//m.shopclues.com/electronic-accessories.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Appliances</h5>
+        <ul>        
+          <a target="_blank" href="//m.shopclues.com/appliances-trimmers.html">Trimmers</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-hair-dryers.html">Hair Dryers</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-emergency-lights-and-lamps.html">Emergency Lights</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-water-purifiers.html">Water Purifiers</a>
+          <a target="_blank" href="//m.shopclues.com/kitchen-appliances-kettles.html">Electric Kettles</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-hair-straighteners.html">Hair Straighteners</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-cooktops.html">Induction Cooktops</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-sewing-machines.html">Sewing Machines</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-water-geysers.html">Geysers</a>
+          <a target="_blank" href="//m.shopclues.com/appliances.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Home &amp; Kitchen</h5>
+        <ul>       
+          <a target="_blank" href="//m.shopclues.com/home-furnishing-bed-linens.html">Bedsheets</a>
+          <a target="_blank" href="//m.shopclues.com/hardware.html">Hardware &amp; Sanitaryware</a>
+          <a target="_blank" href="//m.shopclues.com/home-furnishing-bath-linen.html">Towels, Bath Linens</a>
+          <a target="_blank" href="//m.shopclues.com/furniture.html">Furniture</a>
+          <a target="_blank" href="//m.shopclues.com/kitchen-dining-cookware.html">Cookware</a>
+          <a target="_blank" href="//m.shopclues.com/kitchen-dining-tools.html">Kitchen Tools</a>
+          <a target="_blank" href="//m.shopclues.com/home-cleaning.html">Home Cleaning Utilities</a>
+          <a target="_blank" href="//m.shopclues.com/home-furnishing-mats.html?sort_by=popularity&sort_order=desc&facet_type[]=Door+Mats&fsrc=facet_type">Doormats</a>
+          <a target="_blank" href="//m.shopclues.com/home-furnishing-curtains.html">Curtains</a>
+          <a target="_blank" href="//m.shopclues.com/garden.html">Gardening Essentials</a>
+          <a target="_blank" href="//m.shopclues.com/home-garden.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Fashion</h5>
+        <ul>        
+          <a target="_blank" href="//m.shopclues.com/womens-apparel.html">Women's Clothing</a>
+          <a target="_blank" href="//m.shopclues.com/mens-clothing.html">Men's Clothing</a>
+          <a target="_blank" href="//m.shopclues.com/womens-clothing-ethnic-wear.html">Women's Ethnic Wear</a>
+          <a target="_blank" href="//m.shopclues.com/men-accessories.html">Men's Fashion Accessories</a>
+          <a target="_blank" href="//m.shopclues.com/mens-sports-wear.html">Sports Wear</a>
+          <a target="_blank" href="//m.shopclues.com/mens-clothing-western-wear.html">Western Wear</a>
+          <a target="_blank" href="//m.shopclues.com/fashion-handbags-clutches.html">Handbags &amp; Wallets, Clutches</a>
+          <a target="_blank" href="//m.shopclues.com/fashion-handbags.html">Handbags</a>
+          <a target="_blank" href="//m.shopclues.com/womens-clothing-ethnic-wear-sarees.html">Sarees</a>
+          <a target="_blank" href="//m.shopclues.com/mens-clothing-t-shirts.html">T-Shirts</a>
+          <a target="_blank" href="//m.shopclues.com/womens-inner-and-sleepwear.html">Lingerie &amp; Sleep Wear</a>
+          <a target="_blank" href="//m.shopclues.com/fashion.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Footwear</h5>
+        <ul>        
+          <a target="_blank" href="//m.shopclues.com/mens-sports-shoes.html">Men's Sports Shoes</a>
+          <a target="_blank" href="//m.shopclues.com/footwear-mens-slippers-flip-flops.html">Men's Slippers</a>
+          <a target="_blank" href="//m.shopclues.com/footwear-mens-casual-shoes.html">Casual Shoes</a>
+          <a target="_blank" href="//m.shopclues.com/footwear-mens-sandals.html">Sandals &amp; Floaters</a>
+          <a target="_blank" href="//m.shopclues.com/footwear-mens-formal-shoes.html">Formal Shoes</a>
+          <a target="_blank" href="//m.shopclues.com/footwear-womens-flats.html">Women Flats</a>
+          <a target="_blank" href="//m.shopclues.com/womens-footwear-bellies.html">Ballerinas</a>
+          <a target="_blank" href="//m.shopclues.com/footwear-mens-loafers-moccasins.html">Loafers</a>
+          <a target="_blank" href="//m.shopclues.com/footwear-mens-boots.html">Boots</a>
+          <a target="_blank" href="//m.shopclues.com/footwear-shoe-care-accessories.html">Shoe Care &amp; Accessories</a>
+          <a target="_blank" href="//m.shopclues.com/footwear.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Travel &amp; Luggage</h5>
+        <ul>
+          <a target="_blank" href="//m.shopclues.com/duffle-bags.html">Duffle Bags</a>
+          <a target="_blank" href="//m.shopclues.com/luggage-laptop-bags.html">Laptop Bags</a>
+          <a target="_blank" href="//m.shopclues.com/travel-pouches.html">Travel Pouches</a>
+          <a target="_blank" href="//m.shopclues.com/backpacks.html">Backpacks</a>
+          <a target="_blank" href="//m.shopclues.com/suitcases-and-trolleys.html">Suitcases &amp; Trolleys</a>
+          <a target="_blank" href="//m.shopclues.com/travel-accessories.html">Travel Accessories</a>
+          <a target="_blank" href="//m.shopclues.com/luggage-gym-bags.html">Gym Bags</a>
+          <a target="_blank" href="//m.shopclues.com/messenger-bags.html">Messenger Bags</a>
+          <a target="_blank" href="//m.shopclues.com/schoolbags.html">School Bags</a>
+          <a target="_blank" href="//m.shopclues.com/safety-locks-and-straps.html">Safety Locks</a>
+          <a target="_blank" href="//m.shopclues.com/travel-and-luggage.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Jewelry &amp; Watches</h5>
+        <ul>
+          <a target="_blank" href="//m.shopclues.com/coins-bars.html">Coins &amp; Bars</a>
+          <a target="_blank" href="//m.shopclues.com/men-watches.html">Men's Watches</a>
+          <a target="_blank" href="//m.shopclues.com/womens-watches.html">Women's Watches</a>
+          <a target="_blank" href="//m.shopclues.com/precious-jewellery-necklace-and-sets.html">Necklaces Sets</a>
+          <a target="_blank" href="//m.shopclues.com/jewellery-watches-fashion-jewellery.html">Fashion Jewelry</a>
+          <a target="_blank" href="//m.shopclues.com/precious-jewellery-pendants-and-lockets.html">Pendants and Lockets</a>
+          <a target="_blank" href="//m.shopclues.com/precious-jewellery-earrings.html">Earrings</a>
+          <a target="_blank" href="//m.shopclues.com/precious-jewellery-rings.html">Rings</a>
+          <a target="_blank" href="//m.shopclues.com/jewellery-jewellery-boxes.html">Jewelry Boxes</a>
+          <a target="_blank" href="//m.shopclues.com/watch-kids-watches.html">Kid's Watches</a>
+          <a target="_blank" href="//m.shopclues.com/jewelry-and-watches.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Automotive</h5>
+        <ul>
+          <a target="_blank" href="//m.shopclues.com/automotive-bike-accessories.html">Bike Accessories / Tools</a>
+          <a target="_blank" href="//m.shopclues.com/car-bike-cleaning-aids.html">Car Cleaning Aids</a>
+          <a target="_blank" href="//m.shopclues.com/helmets.html">Helmets</a>
+          <a target="_blank" href="//m.shopclues.com/safety-utility-bike-body-covers.html">Bike Body Covers</a>
+          <a target="_blank" href="//m.shopclues.com/automotive-car-accessories.html">Car Accessories / Tools</a>
+          <a target="_blank" href="//m.shopclues.com/bike-accessories-riding-gloves.html">Riding Gloves</a>
+          <a target="_blank" href="//m.shopclues.com/automotive-interior-accessories-car-perfumes-and-fresheners.html">Perfumes</a>
+          <a target="_blank" href="//m.shopclues.com/car-bike-scratch-and-dent-removers.html">Car Scratch Removers</a>
+          <a target="_blank" href="//m.shopclues.com/car-audio-and-video.html">Car Audio Video</a>
+          <a target="_blank" href="//m.shopclues.com/bike-locks-and-alarm-systems.html">Bike Alarms</a>
+          <a target="_blank" href="//m.shopclues.com/car-and-bike-accessories.html">View all</a>
+        </ul>
+      </div>
+      
+      <div class="grp">
+        <h5 class="expand">Toys, Baby &amp; Kids</h5>
+        <ul>
+          <a target="_blank" href="//m.shopclues.com/baby-diapers-and-more.html">Diapers</a>
+          <a target="_blank" href="//m.shopclues.com/kids-learning-and-educational-toys.html">Educational Toys</a>
+          <a target="_blank" href="//m.shopclues.com/kids-baby-footwear.html">Kid's Footwear</a>
+          <a target="_blank" href="//m.shopclues.com/electronic-and-remote-control-toys.html">Remote Controlled Toys</a>
+          <a target="_blank" href="//m.shopclues.com/toys-games-soft-toys.html">Soft Toys</a>
+          <a target="_blank" href="//m.shopclues.com/kids-party-supplies.html">Party Supplies</a>
+          <a target="_blank" href="//m.shopclues.com/kids-cubes-special.html">Cubes</a>
+          <a target="_blank" href="//m.shopclues.com/maternity-care.html">Maternity Care</a>
+          <a target="_blank" href="//m.shopclues.com/kids-clothing.html">Kid's Apparel</a>
+          <a target="_blank" href="//m.shopclues.com/toys-baby-and-kids.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Gourmet &amp; Daily Needs</h5>
+        <ul>
+          <a target="_blank" href="//m.shopclues.com/stationery-office-supplies.html">Office Supplies</a>
+          <a target="_blank" href="//m.shopclues.com/pet-supplies.html">Pet Supplies</a>
+          <a target="_blank" href="//m.shopclues.com/all-books.html">Books</a>
+          <a target="_blank" href="//m.shopclues.com/local-snacks-and-namkeens.html">Namkeen</a>
+          <a target="_blank" href="//m.shopclues.com/books-and-daiy-needs-stationery.html">Stationery</a>
+          <a target="_blank" href="//m.shopclues.com/stationery-pens-and-markers.html">Pens &amp; Markers</a>
+          <a target="_blank" href="//m.shopclues.com/foods-coffee-and-tea.html">Tea &amp; Coffee</a>
+          <a target="_blank" href="//m.shopclues.com/foods-chocolates-and-candies.html">Chocolates &amp; Candies</a>
+          <a target="_blank" href="//m.shopclues.com/food-indian-sweets.html">Indian Sweets</a>
+          <a target="_blank" href="//m.shopclues.com/gifting.html">Gifts</a>
+          <a target="_blank" href="//m.shopclues.com/gourmet-and-daily-needs.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Sports and Health</h5>
+        <ul>
+          <a target="_blank" href="//m.shopclues.com/home-gym.html">Home Gym Equipment</a>
+          <a target="_blank" href="//m.shopclues.com/fitness-equipments-exercise-bikes.html">Exercise Bikes</a>
+          <a target="_blank" href="//m.shopclues.com/sports-fitness-accessories.html">Gym Accessories</a>
+          <a target="_blank" href="//m.shopclues.com/massagers.html">Massagers</a>
+          <a target="_blank" href="//m.shopclues.com/diabetic-care.html">Diabetic Care</a>
+          <a target="_blank" href="//m.shopclues.com/cricket.html">Cricket</a>
+          <a target="_blank" href="//m.shopclues.com/table-tennis.html">Table Tennis</a>
+          <a target="_blank" href="//m.shopclues.com/sports-and-health.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <h5 class="expand">Beauty &amp; Perfumes</h5>
+        <ul>
+          <a target="_blank" href="//m.shopclues.com/men-grooming-combos.html">Grooming Essentials</a>
+          <a target="_blank" href="//m.shopclues.com/fragrances-deodrants.html">Deodorants</a>
+          <a target="_blank" href="//m.shopclues.com/fragrances-perfumes.html">Men's Perfumes</a>
+          <a target="_blank" href="//m.shopclues.com/hair-care.html">Hair Care</a>
+          <a target="_blank" href="//m.shopclues.com/fragrances-perfumes.html">Women's Perfumes</a>
+          <a target="_blank" href="//m.shopclues.com/skin-care-facial-kits-face-pack.html">Face Packs</a>
+          <a target="_blank" href="//m.shopclues.com/oral-care-toothbrush.html">Oral Care</a>
+          <a target="_blank" href="//m.shopclues.com/herbal-care.html">Herbal Care</a>
+          <a target="_blank" href="//m.shopclues.com/value-combos.html">Value Combo</a>
+          <a target="_blank" href="//m.shopclues.com/womens-hygiene.html">Women's Hygiene</a>
+          <a target="_blank" href="//m.shopclues.com/health-and-beauty.html">View all</a>
+        </ul>
+      </div>
+
+      <div class="pop_shpcls">
+        <h6>Popular on ShopClues</h6>
+        <ul>
+          <a target="_blank" href="//m.shopclues.com/online-offers.html">Offers & Coupons</a>
+          <a target="_blank" href="//m.shopclues.com/watch-couple-watches.html">Couple Watches</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-gas-stoves.html">Gas Stoves</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-air-coolers.html">Air Coolers</a>
+          <a target="_blank" href="//m.shopclues.com/air-purifiers-and-de-humidifiers.html">Air Purifiers</a>
+          <a target="_blank" href="//m.shopclues.com/headset-mic.html">Headphones/Mic/Headset</a>
+          <a target="_blank" href="//m.shopclues.com/kitchen-dining-pressure-cookers.html">Pressure Cookers</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-sandwich-makers.html">Sandwich Makers</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-air-fryers-and-deep-fryers.html">Air Friers/Deep Friers</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-irons.html">Irons</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-led-tvs.html">LED TV</a>
+          <a target="_blank" href="//m.shopclues.com/seasonal-winter-wear-jackets.html">Men Jackets</a>
+          <a target="_blank" href="//m.shopclues.com/kids-learning-and-educational-toys.html">Educational Toys</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-stabilizers.html">Stabilizers</a>
+          <a target="_blank" href="//m.shopclues.com/appliances-room-heaters.html">Heaters</a>
+          <a target="_blank" href="//m.shopclues.com/car-audio.html">Car Audio Systems</a>
+          <a target="_blank" href="//m.shopclues.com/home-decor-photo-frames.html">Photo Frames</a>
+          <a target="_blank" href="//m.shopclues.com/footwear-mens-shoes.html">Men's Shoes</a>
+          <a target="_blank" href="//m.shopclues.com/home-decor-decorative-lights.html">Decorative Lights</a>
+          <a target="_blank" href="//m.shopclues.com/seasonal-wear-rain-wear.html">Rain Wear</a>
+          <a target="_blank" href="//m.shopclues.com/home-furnishing-bedsheets.html">Bed Sheets</a>
+          <a target="_blank" href="//m.shopclues.com/all-brands.html">Top Brands</a>
+          <a target="_blank" href="//m.shopclues.com/refer-and-earn.html">Refer and Earn</a>
+        </ul>
+      </div>
+    </div>
+                <div class="inf_text">
+              <h6>Online Shopping in India @m.ShopClues.com</h6>
+              <h5>India's Asli Online Shopping Hub m.ShopClues.com</h5>
+              <p>Back in 2011, when people were hopping from one Store to another for best bargains on an overall households monthly bill, Sandeep Aggarwal (the Founder & Mastermind of ShopClues ) was realizing his vision of a budget-friendly online bazaar in India. m.ShopClues.com was then given a shape and strategy in 2012 as the  India's First & Largest Fully Managed Marketplace.
+              </p>
+              <h5>
+                Ting se Leke Tong with Aflatooni Products!
+              </h5>
+              <p>
+                What you Think is What you Get isn't just a saying at ShopClues. With over 2.8 crore products, you can get just about everything that you can imagine at ShopClues. From usual products in Electronics, Fashion, Home & Kitchen, to unusual products like cow dung cakes, Knife Sharpeners, etc., ShopClues tops in everything. So, you see what we mean when we say Aflatooni Products! ShopClues has revolutionized the conceptual Online Shopping in India with initiatives such as Ghar Wapsi Sale, Bigger than the Biggest Thank You Sale, #EkZeroKum Sale etc. Amongst many other shopping sites, ShopClues is the leader in unstructured categories like Daily Utilities, Garden Needs, Hardware, Kitchen Storage, and others.
+              </p>
+              <h5>
+                Believable Shopping @ Unbelievable Prices
+              </h5>
+              <p>
+                Every day, ShopClues delights millions of discount-hunters with Paisa-Vasool Shopping Experience with prices as low as Re.1. We are the first ones to introduce the idea of Sab Kuch Wholesale Ke Rate Par on an online platform with shopping options to both wholesale as well as retail seekers.
+              </p>
+              <h5>
+                Experiencing the neighbourhood Local Bazaar
+              </h5>
+              <p>
+                ShopClues brings the experience of India's Flea Markets online, in the form of its weekly properties - Sunday Flea Market, Refreshing Monday Sale, Triple Value Friday Sale, and Wednesday Brand Bazaar. Another property capturing the essence of regional Indian shopping is called NRH (National Regional Heritage), which gives a sneak-peek into India's Cultural Gullies at very reasonable prices. These online markets showcase products with range so wide, and prices so low, that they beat the offline neighbourhood markets of India. The concept especially works incredibly well with the middle class population habituated in tier 2 & 3 cities.
+              </p>
+              <h5>
+                An Online Selling Space for SME Merchants
+              </h5>
+              <p>
+                Working as a marketplace, ShopClues has been well-supported by a bourgeoning community of certified merchants in India. Unlike various other online shopping sites, ShopClues has achieved the largest merchant base of over 3.5 Lakhs. This online shopping website is creating history by empowering local and regional merchants, primarily from Tier 2 & 3 cities and making them a national enterprise at ShopClues.
+              </p>
+              <h5>
+                ShopClues Surety
+              </h5>
+              <p>
+                The <a href="//www.shopclues.com/blog/news/shopclues-unveils-shopclues-surety-to-ensure-best-online-shopping-experience">ShopClues Surety Program</a>, was launched in order to ensure a hassle free shopping experience for its customers. This premium service is in addition to the ShopClues Buyer Protection program which ensures an extensive 5 point quality check of the products in order to give Customers a seamless shopping experience. In order to make it user-friendly, the platform marks out the rating of the products classified into Best Buy, Great Buy, Value Buy or Brand Authorized. This allows the customer to make an optimal purchase decision while shopping on the platform.
+              </p>
+              <h5>
+                ShopClues VIP Club
+              </h5>
+              <p>
+              Get Rewards Every time you Shop! Join the VIP Club and Get 5% Cashback on Every Order. That's not all! With Free Membership, No Hidden Costs & No Registration Procedures, get Exclusive Benefits on Grofers, Lenskart, Food Panda & Hi Care Pest Control Services. <a href="//www.shopclues.com/vip-club.html">Join the Club Now</a>
+              </p>
+          </div>
+        <div class="inf_text">
+      <div>
+        <h2></h2>      </div>
+      <div>
+              </div>
+    </div>
+  </div>
+            <div class="footer_nav" id="footer_nav">
+    <div class="callout_opt">
+      <h6 onclick="useful_links()" id="useful_links" class="active">Useful Links</h6>
+      <nav>
+          <a href="//m.shopclues.com/privacy-policy.html">Privacy Policy</a>
+          <a href="//m.shopclues.com/user-agreement.html">User agreement</a>
+          <a href="//m.shopclues.com/notes-to-security-practices.html">Notes To Security Practices</a>
+          <a href="//m.shopclues.com/compliance.html">Compliance</a>
+          <!-- <a href="//m.shopclues.com/help.html">Shopper Central</a>
+                      <a href="//storemanager.shopclues.com/vendor.php?dispatch=authorize.login_form&return_url=vendor.php" id="merchant_central">Merchant Central</a>
+           -->
+          <a href="//m.shopclues.com/aboutus.html">About Us</a>
+          <a href="//m.shopclues.com/merchant-support.html">Contact Us</a>
+          <a href="//m.shopclues.com/press.html">Press</a>
+      </nav>
+    </div>
+    <div class="callout_opt">
+      <h6 onclick="shopper_central()" id="shopper_central">Shopper Central</h6>
+      <nav>
+        <!-- <a href="javascript:void(0);" id ="signupLog" onclick="loginPopup();" >Sign In/Register</a>   -->
+        <a href="//m.shopclues.com/buyer-protection.html">Our Policies</a>
+        <a href="//m.shopclues.com/cluesbucks.html">CluesBucks</a>
+        <a href="//m.shopclues.com/payment-policy.html">Payment Options</a>
+        <a href="//m.shopclues.com/surety.html">ShopClues Surety</a>
+        <a href="//m.shopclues.com/return-policy.html">Easy Returns & Replacement</a>
+        <a href="//m.shopclues.com/help.html">FAQs (Help)</a>
+        <a href="//m.shopclues.com/service-centers.html">Service Centers</a>                        
+        <a href="//m.shopclues.com/user-agreement.html">User Agreement</a> 
+        <a href="//m.shopclues.com/refer-and-earn.html">Refer & Earn</a>
+      </nav>
+    </div>
+    <div class="callout_opt">
+      <h6 onclick="merchant_central3()" id="merchant_central3">Merchant Central</h6>
+      <nav>
+        <a href="http://storemanager.shopclues.com/vendor.php?dispatch=authorize.login_form&return_url=vendor.php">Merchant Panel</a>
+        <a href="//m.shopclues.com/learn-to-sell.html">How To Sell</a>
+        <a href="//m.shopclues.com/pricing.html">Commission Structure</a>
+        <a href="//m.shopclues.com/fulfillment-by-shopclues.html">Fullfillment Policy</a>
+        <a href="//m.shopclues.com/policies-and-rules.html">Policies & Rules</a>
+        <a href="//m.shopclues.com/user-agreement.html">User Agreement</a>
+        <a href="//m.shopclues.com/merchant-testimonial.html">Testimonials</a>
+        <a href="//m.shopclues.com/seller-summit.html">Seller Summit</a>
+         <a href="http://merchant-community.shopclues.com">Merchant Blog</a>
+         <a href="http://developer.shopclues.com">Developer Resources</a>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="copyright" id="copyright">
+    <span>Copyright &copy; 2011-2026 Clues Network Pvt. Ltd.</span>
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODIzIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDgyMyAxNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTY3LjkzMi43OTJjMzcuNDMyIDAgNjcuNzg2IDMxLjE1IDY3Ljc1MiA2OS41Mi0uMDYgMzcuNzA3LTMwLjY2NiA2OC42OS02Ny45MjUgNjguNjgzLTM3LjQ0NiAwLTY3Ljc5OS0zMS4xNDktNjcuNzU5LTY5LjUyQy4wMDcgMzEuNzgyIDMwLjY2Ljc4NSA2Ny45MzIuNzkyeiIgZmlsbD0iIzA1QTJCMyIvPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMTIuNDY0IDM4LjYzYy0uNTM5IDEuMDE4LTMxLjc3IDQ0Ljk3Ni00OS44MTUgNjUuNDMxLTQuMjcxIDQuODM1LTExLjQzNyA0Ljk2MS0xNS43MDItLjI1Mi05Ljg2Ny0xMi4wNS0xNy44MzgtMjIuNTExLTI3LjA5My0zNy4wNDgtMS4yNzctMS45OTUtMi44NTQtNC44NzUtLjU2Ni03LjM5NSAwIDAgMi41MjItMi44MDcgNy45ODUgMS4wNSA2Ljk0IDQuODk1IDE0LjMyNSA5LjY3NyAyMS4xMzggMTQuMjE5IDMuODk5IDIuNTkzIDYuMzg3IDIuODIgOS45OC4wMzNDNzMuNTI4IDYyLjk2MyAxMDcuNDYgMzcuNzIgMTA5LjM5IDM2LjU0MmMzLjQwNi0yLjA2OCAzLjgzOS41MiAzLjAyNyAyLjA4OWguMDQ3eiIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMTIuNDY0IDM4LjYzYy0uNTM5IDEuMDE4LTMxLjc3IDQ0Ljk3Ni00OS44MTUgNjUuNDMxLTQuMjcxIDQuODM1LTExLjQzNyA0Ljk2MS0xNS43MDItLjI1Mi05Ljg2Ny0xMi4wNS0xNy44MzgtMjIuNTExLTI3LjA5My0zNy4wNDgtMS4yNzctMS45OTUtMi44NTQtNC44NzUtLjU2Ni03LjM5NSAwIDAgMi41MjItMi44MDcgNy45ODUgMS4wNSA2Ljk0IDQuODk1IDE0LjMyNSA5LjY3NyAyMS4xMzggMTQuMjE5IDMuODk5IDIuNTkzIDYuMzg3IDIuODIgOS45OC4wMzNDNzMuNTI4IDYyLjk2MyAxMDcuNDYgMzcuNzIgMTA5LjM5IDM2LjU0MmMzLjQwNi0yLjA2OCAzLjgzOS41MiAzLjAyNyAyLjA4OWguMDQ3eiIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggZD0iTTc5NS43MDIgNjIuMTk5Yy0xLjc3LjUyNS0zLjQyIDEuMzktNC44NTcgMi41NDdhMTAuOTcgMTAuOTcgMCAwIDAtMy4wMTQgMy45OSAxMy4xODQgMTMuMTg0IDAgMCAwLTEuMDM4IDUuMzIgMTEuODA1IDExLjgwNSAwIDAgMCAxLjI3MSA1LjY0NiAxMS4zODUgMTEuMzg1IDAgMCAwIDMuMzggMy45MyAxNC41MyAxNC41MyAwIDAgMCA0LjkwMyAyLjI4OCAyMy41MjUgMjMuNTI1IDAgMCAwIDExLjgxIDAgMTQuMjg2IDE0LjI4NiAwIDAgMCA0Ljg3Ny0yLjI4OCAxMS4xNzcgMTEuMTc3IDAgMCAwIDMuMzI3LTMuOTIzIDEyLjQ4OCAxMi40ODggMCAwIDAgMS4yMjQtNS43NiAxMi4yNTUgMTIuMjU1IDAgMCAwLTEuMjUxLTUuNzEyIDExLjI5OSAxMS4yOTkgMCAwIDAtMy4zMjctMy45MjMgMTQuNjQyIDE0LjY0MiAwIDAgMC00Ljg4My0yLjI4OCAyMi40MTUgMjIuNDE1IDAgMCAwLTUuODc1LS43NTIgMjIuMDYgMjIuMDYgMCAwIDAtNi41MjEuODkybC0uMDI2LjAzM3ptLTExLjc4NCAxOS41MjVhMTcuMjIxIDE3LjIyMSAwIDAgMS0xLjU3Ni03LjUxNSAxOC4yOTEgMTguMjkxIDAgMCAxIDEuNTUtNy43NCAxNS42NCAxNS42NCAwIDAgMSA0LjI3OC01LjU4NyAxOC40OTMgMTguNDkzIDAgMCAxIDYuMzQ3LTMuMzY1IDI3LjAxMyAyNy4wMTMgMCAwIDEgMTUuMzAzIDAgMTguODMxIDE4LjgzMSAwIDAgMSA2LjI5NSAzLjMyNSAxNS44MjQgMTUuODI0IDAgMCAxIDQuMzA0IDUuNTQ2IDE5LjMzNCAxOS4zMzQgMCAwIDEgMCAxNS4zMjkgMTUuODY0IDE1Ljg2NCAwIDAgMS00LjMwNCA1LjU0IDE4LjQyIDE4LjQyIDAgMCAxLTYuMjk1IDMuMzI1IDI2LjExMSAyNi4xMTEgMCAwIDEtNy42MDUgMS4wOSAyNS43OSAyNS43OSAwIDAgMS03LjY3OC0xLjExNyAxOC43NzMgMTguNzczIDAgMCAxLTYuMzItMy4zMjUgMTYuMDY2IDE2LjA2NiAwIDAgMS00LjMwNS01LjQ4NmwuMDA2LS4wMnptMzYuOTAxIDM0LjEwOC0uMDc0LS4yMTNhMTQuNjM1IDE0LjYzNSAwIDAgMC0yLjkyLTQuNzY4IDE0Ljg5IDE0Ljg5IDAgMCAwLTQuMjY1LTMuMTcyIDIzLjgwOSAyMy44MDkgMCAwIDAtNS4wODQtMS44MDJsLS44MzEtLjE4Ni4wNzMgNS4zMi41MTkuMTJjMS4zMzUuMzAyIDIuNjI0Ljc4IDMuODMyIDEuNDIzYTExLjgzOCAxMS44MzggMCAwIDEgMi45ODEgMi4yODcgOS45NTcgOS45NTcgMCAwIDEgMS45NDkgMy4xMTljLjM3OSAxLjEzNC41NjggMi4zMjMuNTU5IDMuNTE4YTExLjU3NiAxMS41NzYgMCAwIDEtMS4zMyA1LjgxMiAxMC40MSAxMC40MSAwIDAgMS0zLjQ1MyAzLjY3MSAxNS4yOTkgMTUuMjk5IDAgMCAxLTQuOTU3IDEuOTk1Yy0zLjg1Mi44MzMtNy44NC43OTktMTEuNjc3LS4wOTlhMTQuNzkxIDE0Ljc5MSAwIDAgMS00Ljg1MS0yLjE1NSAxMC41OTQgMTAuNTk0IDAgMCAxLTMuMzI2LTMuNjQ0IDEwLjgxNCAxMC44MTQgMCAwIDEtMS4yMTEtNS4yNzQgMTUuODY4IDE1Ljg2OCAwIDAgMSAuNDUyLTMuOTQzIDkuNTQ1IDkuNTQ1IDAgMCAxIDEuMjMxLTIuNjYxYzEuMjExLTEuNzc1IDMuMzI3LTMuMDA1IDYuMjA4LTMuNjc3bC41MzktLjExM3YtLjM5MmguMDY2di00LjgxNWwtLjc3MS4xMmExNS40MjYgMTUuNDI2IDAgMCAwLTUuMTUgMS43MDIgMTIuNDA3IDEyLjQwNyAwIDAgMC0zLjc3OSAzLjE2NSAxMi44NDggMTIuODQ4IDAgMCAwLTEuOTIzIDMuMzcyYy0uMjE3LjQ5LS40MDYuOTkyLS41NjYgMS41MDNhMTguNDgzIDE4LjQ4MyAwIDAgMC0uNzU4IDUuMzggMjEuNTc4IDIxLjU3OCAwIDAgMCAxLjA3MSA2LjkzNiAxNC4xMTYgMTQuMTE2IDAgMCAwIDMuNTA2IDUuNjEzIDE2LjQ5OCAxNi40OTggMCAwIDAgNi4xODEgMy43MjQgMjcuNTU5IDI3LjU1OSAwIDAgMCA5LjA3NiAxLjMzYzIuNTMuMDEyIDUuMDUzLS4yODUgNy41MTEtLjg4NWExOC4yMzcgMTguMjM3IDAgMCAwIDYuMzM1LTIuODU5IDE0LjQ5MyAxNC40OTMgMCAwIDAgNC4zNzEtNS4xMTQgMTYuMTQ5IDE2LjE0OSAwIDAgMCAxLjYxNy03LjQ4MSAxOC40NzMgMTguNDczIDAgMCAwLTEuMDg1LTYuNTkxIDIuNjczIDIuNjczIDAgMCAwLS4xMDYtLjIzOWwuMDQtLjAyN3ptLTM3LjMzMy03NS4wMjdoMzcuMzc5di0uMzMyaC4xOHYtNC43ODhoLTI4LjQ4NGwyOC4zMDQtMTAuNDQxdi0uNDE5bC4xOC0uMDY2di00LjE3bC0yNy44NTItMTAuMjQxaDI3LjY3MnYtLjY2NWguMThWNC44OTVINzgzLjN2Ni4zNTdsLjE4Ni4wNnYuNTU5TDgxMy41IDIyLjgzbC0zMC4yIDExLjIyNXY2LjM5MWguMTg2VjQwLjgwNXptLTU1LjQzNy00LjgyOGMwLTcuMjI4IDAtMTMuNDg2IDYuODQ3LTEzLjQ4NiA2Ljg0NiAwIDYuODM5IDcuOTggNi44MzkgMTMuODc5IDAgMi45MzIuOTg1IDMuOTEgMy45MTMgMy45MWgxNS40NTZjMi45MzQgMCAzLjkxMi0xLjk1NSAzLjkxMi00Ljg4MSAwLTIxLjExNC0xMC4xNjctMzUuMTkzLTMxLjA5OC0zNS4xOTMtMTkuNTU1IDAtMjkuMzM2IDEzLjA5NC0yOS4zMzYgMzAuNjkgMCAxNS40NDIgMS45NTcgMjIuNjc4IDIwLjczMyA0NC43NjMgMTAuMzY2IDEyLjEyMyAxNi4yMzQgMjAuMTM2IDE2LjIzNCAyNy41NjUgMCA3LjIyOCAwIDEzLjQ3OS02Ljg0NiAxMy40NzktNi44NDcgMC02Ljg0LTcuOTgtNi44NC0xMy44NzggMC0yLjkzMy0uOTg1LTMuOTEtMy45MTItMy45MWgtMTUuNDYzYy0yLjkzNCAwLTMuOTEyIDEuOTU0LTMuOTEyIDQuODg3IDAgMjEuMTIxIDEwLjE2NiAzNS4xOTMgMzEuMDk4IDM1LjE5MyAxOS41NTUgMCAyOS4zMzUtMTMuMDk0IDI5LjMzNS0zMC42OTcgMC0xNS40MzUtMS43NTYtMjIuNjc3LTIwLjUzMi00NC43NjMtMTAuMzczLTEyLjExNi0xNi40MzQtMjAuMTMtMTYuNDM0LTI3LjU1OGguMDA2em0tNzguNDExIDEwMi4wNGg0Mi4yMTZjMi45MzUgMCAzLjkxMy0uOTc3IDMuOTEzLTMuOTF2LTE0LjQ3MWMwLTIuOTMzLS45NzgtMy45MDQtMy45MTMtMy45MDRoLTE4Ljc3NmMtMy45MTIgMC0zLjkxMiAwLTMuOTEyLTMuOTFWODAuOTM5YzAtMy45MSAwLTMuOTEgMy45MTItMy45MWgxOC43NzZjMi45MzUgMCAzLjkxMy0uOTc4IDMuOTEzLTMuOTFWNTguNjQ3YzAtMi45MjYtLjk3OC0zLjkwNC0zLjkxMy0zLjkwNGgtMTguNzc2Yy0zLjkxMiAwLTMuOTEyIDAtMy45MTItMy45MVYyNy4zNzJjMC0zLjkwNCAwLTMuOTA0IDMuOTEyLTMuOTA0aDE4Ljc3NmMyLjkzNSAwIDMuOTEzLS45NzcgMy45MTMtMy45MVY1LjA5NGMwLTIuOTMzLS45NzgtMy45MS0zLjkxMy0zLjkxaC00Mi4yMzZjLTIuOTQxIDAtMy45MTIuOTc3LTMuOTEyIDMuOTF2MTI5LjAxM2MwIDMuOTEgMS45NTYgMy45MSAzLjkxMiAzLjkxaC4wMnpNNjEwLjUyMiA1LjA5NHY5NS41ODljMCA5Ljc2OSAwIDE2LjAyLTYuODQ2IDE2LjAycy02Ljg0Ni02LjI1MS02Ljg0Ni0xNi4wMlY1LjA5NGMwLTIuOTMzLS45NzktMy45MS0zLjkxMy0zLjkxaC0xNS42NDJjLTIuOTM0IDAtMy45MTIuOTc3LTMuOTEyIDMuOTF2OTQuNzk4YzAgMjkuNTIgMTAuNzU4IDM5LjEwMyAzMC4zMTMgMzkuMTAzczMwLjI5My05Ljc4MyAzMC4yOTMtMzkuMTAzVjUuMDk0YzAtMi45MzMtLjk3MS0zLjkxLTMuOTEyLTMuOTFoLTE1LjYzNmMtMi45MzQgMC0zLjkxMi45NzctMy45MTIgMy45MWguMDEzem0tODcuMjI3IDEzMi45MjNoNDEuMjUyYzIuOTM0IDAgMy45MTktLjk3NyAzLjkxOS0zLjkxdi0xNC40NzFjMC0yLjkzMy0uOTg1LTMuOTA0LTMuOTE5LTMuOTA0aC0xNy41ODVjLTQuMTA1IDAtNC4xMDUgMC00LjEwNS00LjEwM1Y1LjA5NGMwLTIuOTMzLS45NzItMy45MS0zLjkxOS0zLjkxaC0xNS42NDNjLTIuOTM0IDAtMy45MDUuOTc3LTMuOTA1IDMuOTF2MTI5LjAxM2MwIDIuOTMzLjk3MSAzLjkxIDMuOTA1IDMuOTF6TTQ3MC41IDM4LjMyNWMwLTkuNzcgMC0xNi4wMzQgNi44NDctMTYuMDM0IDYuODQ2IDAgNi44NDYgNi4yNjUgNi44NDYgMTYuMDM0djUuODU5YzAgMi45MzkuOTcxIDMuOTEgMy45MTIgMy45MWgxNS42MzZjMi45NDEgMCAzLjkxMi0uOTcxIDMuOTEyLTMuOTF2LTUuMDg4QzUwNy42NTMgOS43NyA0OTYuOTAxIDAgNDc3LjM0NyAwYy0xOS41NTUgMC0zMC4zNCA5LjU4My0zMC4zNCAzOS4wOTZWOTkuODhjMCAyOS41MiAxMC43NTggMzkuMTAyIDMwLjMyIDM5LjEwMiAxOS41NjEgMCAzMC4zMDYtOS43ODIgMzAuMzA2LTM5LjEwMnYtNC44ODJjMC0yLjkzMi0uOTcxLTMuOTEtMy45MTItMy45MWgtMTUuNjM2Yy0yLjk0MSAwLTMuOTEyLjk3OC0zLjkxMiAzLjkxdjUuNjczYzAgOS43NjkgMCAxNi4wMi02Ljg0NiAxNi4wMi02Ljg0NyAwLTYuODQ3LTYuMjUxLTYuODQ3LTE2LjAyVjM4LjMyNWguMDJ6TTM5OC4xNDQgMjYuNGMwLTMuOTEgMC0zLjkxIDMuOTEyLTMuOTEgOS43NzQgMCA5Ljc3NCA5Ljk3NSA5Ljc3NCAxOS45NXY4Ljc5MmMwIDkuOTc1IDAgMTkuOTUtOS43NzQgMTkuOTUtMy45MTIgMC0zLjkxMiAwLTMuOTEyLTMuNTE4VjI2LjQwMXptMzcuMTUzIDI3LjE3M3YtMTMuM2MwLTI5LjMyOC0xMy42ODctMzkuMDk3LTMzLjI2OC0zOS4wOTdoLTIzLjQ0N2MtMi45MzQgMC0zLjkxMi45NzgtMy45MTIgMy45MVYxMzQuMWMwIDIuOTMzLjc4NSAzLjkxIDMuOTEyIDMuOTFoMTUuNjQ5YzIuNzM1IDAgMy45MTMtLjk3NyAzLjkxMy0zLjkxVjk2LjM4YzAtMy45MSAwLTMuOTEgMy45MTItMy45MSAxOS41NTQgMCAzMy4yNjctOS43NzUgMzMuMjY3LTM4Ljg5NmgtLjAyNnptLTk1LjgxLTE0Ljg1N3Y2MS45NjZjMCA5Ljc2OSAwIDE2LjAyLTYuODQ3IDE2LjAyLTYuODQ2IDAtNi44NC02LjI1MS02Ljg0LTE2LjAyVjM4LjcxN2MwLTkuOTc1IDAtMTYuMjI2IDYuODQtMTYuMjI2czYuODQ3IDYuMjU4IDYuODQ3IDE2LjIyNnptMjMuNDY2IDYxLjE4MVYzOS4zMDNjMC0yOS4zMjctMTAuNzUyLTM5LjA5Ni0zMC4zMTMtMzkuMDk2cy0zMC4zMTMgOS41NzYtMzAuMzEzIDM5LjA5NnY2MC41OWMwIDI5LjUyIDEwLjc1OSAzOS4xMDMgMzAuMzEzIDM5LjEwMyAxOS41NTUgMCAzMC4zMTMtOS43ODMgMzAuMzEzLTM5LjEwM3YuMDA3em0tOTEuOTMxIDM4LjExOWgxNS42MzZjMS45NTYgMCAzLjkxMiAwIDMuOTEyLTMuOTFWNS4wOTRjMC0yLjkzMy0uOTc4LTMuOTEtMy45MTItMy45MWgtMTUuNjM2Yy0yLjkyNyAwLTMuOTA1Ljk3Ny0zLjkwNSAzLjkxdjQ1Ljc0YzAgMy45MSAwIDMuOTEtMy45MTIgMy45MWgtNS44NjJjLTMuOTEyIDAtMy45MTIgMC0zLjkxMi0zLjkxVjUuMDk0YzAtMi45MzMtLjk3OC0zLjkxLTMuOTEzLTMuOTFoLTE1LjY1NWMtMi45MjggMC0zLjkxMi45NzctMy45MTIgMy45MXYxMjkuMDEzYzAgMy45MSAxLjk5NiAzLjkxIDMuOTEyIDMuOTFoMTUuNjU1YzEuOTU3IDAgMy45MTMgMCAzLjkxMy0zLjkxVjgwLjkwNmMwLTMuOTEgMC0zLjkxIDMuOTEyLTMuOTFoNS44NjJjMy45MTIgMCAzLjkxMiAwIDMuOTEyIDMuOTF2NTMuMjAxYzAgMy45MSAxLjk1NiAzLjkxIDMuOTA1IDMuOTF6bS04Ni44MjctMTAyLjA0YzAtNy4yMjggMC0xMy40ODYgNi44NTMtMTMuNDg2czYuODQ2IDcuOTggNi44NDYgMTMuODc5YzAgMi45MzIuOTcyIDMuOTEgMy45MDYgMy45MWgxNS40NDljMi45MzQgMCAzLjkwNi0xLjk1NSAzLjkwNi00Ljg4MSAwLTIxLjExNC0xMC4xNi0zNS4xOTMtMzEuMDg1LTM1LjE5My0xOS41NjggMC0yOS4zNDIgMTMuMDk0LTI5LjM0MiAzMC42OSAwIDE1LjQ0MiAxLjk2MyAyMi42NzggMjAuNzM5IDQ0Ljc2MyAxMC4zNTkgMTIuMTIzIDE2LjIyOCAyMC4xMzYgMTYuMjI4IDI3LjU2NSAwIDcuMjI4IDAgMTMuNDc5LTYuODQ3IDEzLjQ3OS02Ljg0NiAwLTYuODQ2LTcuOTgtNi44NDYtMTMuODc4IDAtMi45MzMtLjk3OC0zLjkxLTMuOTA2LTMuOTFIMTY0LjY0Yy0yLjkzNCAwLTMuOTEyIDEuOTU0LTMuOTEyIDQuODg3IDAgMjEuMTIxIDEwLjE2NiAzNS4xOTMgMzEuMDk4IDM1LjE5MyAxOS41NTUgMCAyOS4zMjktMTMuMDk0IDI5LjMyOS0zMC42OTcgMC0xNS40MzUtMS43NTctMjIuNjc3LTIwLjUzMy00NC43NjMtMTAuMzU5LTEyLjExNi0xNi40MjctMjAuMTMtMTYuNDI3LTI3LjU1OHptNTgzLjI0MyA5NS45NTVoNy4wNjZ2Ny4wNjNoLTcuMDY2di03LjA2M3oiIGZpbGw9IiMxRDFEMUIiLz4KPC9zdmc+Cg==" alt="" />
+    <!-- <img src="//images2.shopclues.com/images/ui/shopclues_logo_b.png" alt="" width="112" /> -->
+  </div>
+</footer>
+
+<script type="text/javascript">
+var tb_identifier = 'TB_SC'
+var ua = window.navigator.userAgent;
+if(ua.indexOf(tb_identifier) >= 0 || (ReadCookie("tp_client") && ReadCookie("tp_client")=='TB_SC')){
+ // document.getElementById('merchant_central').style.display = 'none';
+}else{
+  //document.getElementById('merchant_central').style.display = 'block';
+} 
+function fullFooter() {
+  var element = document.getElementById("know_more");
+  element.classList.toggle("opened");
+}
+
+var acc = document.getElementsByClassName("expand");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("expanded");
+    var hide = this.nextElementSibling;
+    if (hide.style.display === "block") {
+      hide.style.display = "none";
+    } else {
+      hide.style.display = "block";
+    }
+  });
+}
+var pageId = '';
+if(pageId == 4650 || pageId == 4666){
+  document.getElementById("know_more").style.display = "none";
+  document.getElementById("copyright").style.display = "none";
+  document.getElementById("footer_nav").style.display = "none";
+  // document.getElementById('know_more').style.display = 'none';
+}
+var productId = '';
+var pdpRouts= '';
+var type='';
+if(pdpRouts == 'pdp' || type=='p') {
+  if(ua.indexOf(tb_identifier) !== -1 || (ReadCookie("tp_client") && ReadCookie("tp_client")=='TB_SC')){
+          try {
+          TBPWAInterface.onProductDetailsOpened(productId);
+          } catch (e) {
+          TBPWAInterface.onSessionExpired(e);
+          } finally {
+          //console.log('in finally TB and SC team');
+          }
+  }
+}
+
+function useful_links() {
+  var element = document.getElementById("useful_links");
+  element.classList.toggle("active");
+};
+function shopper_central() {
+  var element = document.getElementById("shopper_central");
+  element.classList.toggle("active");
+};
+function merchant_central3() {
+  var element = document.getElementById("merchant_central3");
+  element.classList.toggle("active");
+};
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://m.shopclues.com/",
+  "potentialAction": [{
+        "@type": "SearchAction",
+        "target": "https://m.shopclues.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }]
+}
+</script>
+
+<script  defer async type="text/javascript" src="https://mjs.shopclues.net/assets/js/dest/home.bundle.js?version=567"></script>
+<script type="text/javascript" defer src="https://m.shopclues.com/assets/js/homeTracking.js"></script>
+<script async="true" src="assets/js/trackingCalls.js?version=567"></script>
+<script type="text/javascript">
+  var fire_tracker = 0;
+  var is_loyalty_subscribed = 0;
+  function getCartCount (data) {
+        window.cart_data= data.cart_products;
+        window.cart_products = data.products;
+    if (data.count!==undefined && data.count>0) {
+      document.getElementById('cart_count').innerHTML = data.count;
+      document.getElementById('cart_count').style.display = 'block';
+      if(data.products && typeof configs_needed!=='undefined' && configs_needed.loyalty_product_info){
+        if(data.products.indexOf(JSON.stringify(configs_needed.loyalty_product_info.product_id))!=-1){
+          is_loyalty_subscribed = 1;
+        }
+      }
+    }
+  }
+
+</script>
+<script defer async='true' type="application/javascript" src='https://smo.shopclues.com/acart/getCount?jsoncallback=getCartCount'></script>
+<script>
+  var utm_source = '';
+  var cookieDomain = ".shopclues.com";
+  var loc_cookie_lifetime = 60;
+  var loc_fail_timeout = 5 * 1000;
+  if(utm_source == '')
+    utm_source = 'Direct';
+  if(utm_source !== 'undefined'){
+    SetCookie('utm_source',utm_source,loc_cookie_lifetime,cookieDomain);  
+  }
+  function getParameterByName(name) {
+          name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+          var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+          return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+</script>
+<!-- Localization code starts -->
+  <script defer async='true' type="text/javascript" src="//m.shopclues.com/assets/js/src/components/common/tracking_location.js"></script>
+<!-- Localization code ends -->
+<!-- Code for digitalData starts -->
+    <script>
+    // Cookie type
+    var s_lgnctype = '';// Cookie Value
+    var s_lgncvalue = ''; // For Login
+    if (ReadCookie('s_lgnc') !== undefined && ReadCookie('s_lgnc') !== "") {
+    s_lgnctype = 'Login';
+      s_lgncvalue = decodeURIComponent(ReadCookie('s_lgnc'));
+    }
+    // For Registration
+    if (ReadCookie('s_rgnc') !== undefined && ReadCookie('s_rgnc') !== "") {
+    s_lgnctype = 'Registration';
+      s_lgncvalue = decodeURIComponent(ReadCookie('s_rgnc'));
+    }
+    // For Forgot Password
+    if (ReadCookie('s_frgtc') !== undefined && ReadCookie('s_frgtc') !== "") {
+    s_lgnctype = 'FrgtPass';
+      s_lgncvalue = decodeURIComponent(ReadCookie('s_frgtc'));
+    }        
+   var category_name = "";
+      var digitalData = {
+        'pUrl':document.URL,
+        'uUserid':atob(ReadCookie("scumd_m")),
+        'loginReg': s_lgnctype + ":" + s_lgncvalue, // omniture login tracking
+        'isloggedin':(ReadCookie("scumd_m")!=='')?'isloggedin':'notloggedin',
+                'page':{
+            'pageName':'Home',
+            'channel':'Home',
+            'subSection1':'Home',
+            'subSection2':'Home',
+            'subSection3':'Home'
+        },
+        'pageType':'home',
+                'profile_data':{
+        'customer_id':atob(ReadCookie("scumd_m")),
+            'email':atob(ReadCookie("scun_m")),
+            'first_name':atob(ReadCookie("fname")),
+            'last_name': atob(ReadCookie("lname")),
+        }
+    };
+      if (typeof _satellite !== 'undefined') {
+       _satellite.pageBottom();
+    }
+  </script>
+
+  <!-- Code for digitalData ends -->
+<!-- sc tracker code starts here -->
+<div class="bnavbar_wrap" id="sub_nav">
+  <div class="navigation_bbar on" id="navigation_bbar">
+      <ul>
+          <li class="home">
+                              <a class="active icon i_homeG" href="javascript:void(0);"><i></i>Home</a>
+                          </li>
+          <li class="cat">
+              <a href="//m.shopclues.com/all-categories.html" id="cat" onclick = "sub_nav(event)" class=" icon i_catG"><i></i>Categories</a>
+          </li>
+          <li class="make_money" id="make_money" style='display:'>
+            <a href="//m.shopclues.com/community.html" id="community" title="" onclick = "sub_nav(event)" class=" icon i_communityG"><i></i>Deals</a>
+          </li>
+          <li class="wish" style="display:none;" id="sub_nav_wish">
+                      <a href="https://smo.shopclues.com/wishlistPosts?id=1767611199" id="wish" onclick = "sub_nav(event)" class="icon i_wishlistG">
+               <i>
+                <span id="wishlist_val" style="display:none;"></span>
+               </i>
+              Wishlist</a>
+          </li>
+          <li>
+              <a href="https://smo.shopclues.com/account" class="icon i_accountG">
+                <i></i>
+                Account
+              </a>
+          </li>
+      </ul>
+  </div>
+</div>
+
+  
+
+<div class="deal-of-the-day" id="DOTD" >
+  <img src="https://cdn2.shopclues.com/images/banners/2023/Jan/18/HomePage_Tag_EMI_DC.png"  onclick="Open()" alt="Deal of the day">
+  <a href="javascript:void(0);" onclick="Close()">
+    <img src="https://images2.shopclues.com/images/ui/sc_marketing/close-deal-ico.png" alt="">
+  </a>
+</div>
+
+
+<script>
+function Close(){
+    document.getElementById("DOTD").style.display="none";
+}
+function Open() {
+
+        var urlPop = "https:\/\/m.shopclues.com\/refurbished-smartphone.html";
+            window.open(urlPop, "_self" );
+        }
+</script>
+
+<script>
+
+function get_wishlist_count(){
+  var scumd_cookie = ReadCookie('scumd_m');
+  var url = '/ajaxCall/get_wish_count?user_id='+atob(scumd_cookie);
+   var myHeaders = new Headers();
+    myHeaders.append('pragma', 'no-cache');
+    myHeaders.append('cache-control', 'no-cache');
+    myHeaders.append('credentials', 'same-origin');
+    var myInit = {
+      method: 'POST',
+      headers: myHeaders,
+    };
+  fetch(url,myInit) 
+  .then(response=>response.json())
+  .then(response=>{
+    if(response){
+      if(document.getElementById('wishlist_val')){
+        if(response.totalCount > 0){
+          document.getElementById('wishlist_val').style.display='block';
+          document.getElementById('wishlist_val').innerText=response.totalCount;
+        }
+      }
+    }
+  })
+  .catch(error=>console.log(error))
+}
+
+window.onload=get_wishlist_count();
+
+</script>
+<script type="text/javascript">
+  var sub_nav_clicked = '';
+  var show_nav = '';
+    if(document.getElementById('know_more')){
+      document.getElementById('sub_nav_wish').style.display = 'block';
+      show_nav = 'with_wishlist';
+    }
+    if(typeof _satellite !== 'undefined'){
+    _satellite.track('show_nav');
+    }
+  function sub_nav(event){
+    if(event.currentTarget.id){
+      if(event.currentTarget.id == 'cat'){
+        sub_nav_clicked = 'cat_clicked';
+      }else if(event.currentTarget.id == 'community'){
+        sub_nav_clicked = 'community_clicked';
+      }else if(event.currentTarget.id == 'offer'){
+        sub_nav_clicked = 'offer_clicked';
+      }else if(event.currentTarget.id == 'wish'){
+        sub_nav_clicked = 'wishlist_clicked';
+      }
+    }
+    if(typeof _satellite !== 'undefined'){
+      _satellite.track('sub_nav_clicked');
+    }
+  }
+  var PageId = '[3224,4436,81,4439]';
+  var TB_Identifier = 'TB_SC';
+  var ua = window.navigator.userAgent;
+  if(ua.indexOf(TB_Identifier) >= 0 || (ReadCookie("tp_client") && ReadCookie("tp_client")=='TB_SC')){
+    if(document.getElementById('make_money'))
+    document.getElementById('make_money').style.display = 'none';
+  }else{
+      if(document.getElementById('make_money'))
+    document.getElementById('make_money').style.display = '';
+  }
+
+  if((ua.indexOf(TB_Identifier) >= 0 || (ReadCookie("tp_client") && ReadCookie("tp_client")=='TB_SC'))&& PageId){
+
+      if(document.getElementById('navigation_bbar'))
+     document.getElementById('navigation_bbar').style.display = 'none';
+  }else{
+    
+    if(document.getElementById('navigation_bbar'))
+    document.getElementById('navigation_bbar').style.display = '';
+  }
+  var pageIdV = '';
+  if(pageIdV == 4650 || pageIdV == 4666){
+    if(document.getElementById('navigation_bbar'))
+     document.getElementById('navigation_bbar').style.display = 'none';
+  }
+  if(pageIdV == 4650){
+    document.body.classList.add('bd_gallery_view'); 
+  }else{
+    if(document.body.classList.contains('bd_gallery_view')){
+      document.body.classList.remove('bd_gallery_view'); 
+    }
+  }
+</script>
+<script type="text/javascript">
+    if(typeof ReadCookie !== 'function'){
+        window.ReadCookie = function(o){var e=" "+document.cookie,t=e.indexOf(" "+o+"=");if(-1==t&&(t=e.indexOf(";"+o+"=")),-1==t||""===o)return"";var n=e.indexOf(";",t+1);return-1==n&&(n=e.length),unescape(e.substring(t+o.length+2,n))};
+    }
+    var qoo_data = {"enable_script":true,"base_url":"https:\/\/shopclues-log.qoo10.in\/log\/shopclues\/?v=1&","keys":{"url":"prl","email":"lg","uid":"cn","mac":"mac_address","app_code":"app_code","kv":"kv","cache_version":"cv","visitor_id":"mid"}};
+    qoo_data["values"] = {};
+    var qoo_url = qoo_data['base_url'];
+    for (var key in qoo_data['keys']) {
+        var def = false; // default case, i.e, no value found for key 'k'
+        switch (key) {
+            case 'url':
+                qoo_data['values'][qoo_data['keys'][key]] = encodeURIComponent(document.URL);
+                qoo_url += qoo_data['keys'][key] + '=' + qoo_data['values'][qoo_data['keys'][key]] + '&';
+                break;
+            case 'email':
+                let mailid = '';
+                try {
+                    mailid = window.atob(unescape(ReadCookie('scun_m')));
+                    if (!mailid) { mailid = ''; }
+                } catch (e) { mailid = ''; }
+                qoo_data['values'][qoo_data['keys'][key]] = mailid;
+                qoo_url += qoo_data['keys'][key] + '=' + mailid + '&';
+                break;
+            case 'uid':
+                let uid = '';
+                try {
+                    uid = window.atob(unescape(ReadCookie('scumd_m')));
+                    if (!uid) { uid = ''; }
+                } catch (e) { uid = ''; }
+                qoo_data['values'][qoo_data['keys'][key]] = uid;
+                qoo_url += qoo_data['keys'][key] + '=' + uid + '&';
+                break;
+            case 'app_code' :
+                let useragent_cookie = '', app_code = '';
+                try {
+                    useragent_cookie = ReadCookie('useragent');
+                    if (!useragent_cookie) { useragent_cookie = ''; }
+                } catch (e) { useragent_cookie = ''; }
+                switch (useragent_cookie.toLowerCase()) {
+                    case 'app_wp8' : app_code = 'windows';
+                        break;
+                    case 'app_ios' : app_code = 'ios';
+                        break;
+                    default : app_code = 'mweb';
+                        break;
+                }
+                qoo_data['values'][qoo_data['keys'][key]] = app_code;
+                qoo_url += qoo_data['keys'][key] + '=' + app_code + '&';
+                break;
+            case 'ip':
+                // not sending temporarily
+                break;
+            case 'kv':
+                let router_class = "home";
+                switch (router_class.toLowerCase()) {
+                    case 'search' :
+                        qoo_url += qoo_data['keys'][key] + '=page_search|kew_' + "" + '&';
+                        break;
+                    case 'products' :
+                        if ("" > 0) {
+                            switch ("") {
+                                case 'p':
+                                    qoo_data['values'][qoo_data['keys'][key]] = '=page_pdp|pid_' + "";
+                                    qoo_url += qoo_data['keys'][key] + qoo_data['values'][qoo_data['keys'][key]] + '&';
+                                    break;
+                                case 'c':
+                                    let clp_plp = "" ? '=page_clp|cat_' : '=page_plp|cat_';
+                                    qoo_data['values'][qoo_data['keys'][key]] = clp_plp + "";
+                                    qoo_url += qoo_data['keys'][key] + qoo_data['values'][qoo_data['keys'][key]] + '&';
+                                    break;
+                                default:
+                                    def = true;
+                                    break;
+                            }
+                        } else {
+                            def = true;
+                        }
+                        break;
+                    default :
+                        def = true;
+                        break;
+                }
+                break;
+            case 'visitor_id' :
+                 let qoo_visitorId = '';
+                 try {
+                    let om_ck = unescape(ReadCookie('AMCV_2A451D0A60775CE80A495FC0%40AdobeOrg')).split('|');
+                    if (om_ck[4] && om_ck[4].length > 7) {
+                        qoo_visitorId = om_ck[4];
+                    } else {
+                        for (i = 0; i < om_ck.length; i++) {
+                            if (om_ck[i] === 'MCMID') {
+                                qoo_visitorId = ((i + 1) < om_ck.length) ? ((om_ck[i + 1].length > 7) ? om_ck[i + 1] : '') : '';
+                                break;
+                            }
+                        }
+                    }
+                 } catch (e) { qoo_visitorId = ''; }
+                 qoo_data['values'][qoo_data['keys'][key]] = qoo_visitorId;
+                 qoo_url += qoo_data['keys'][key] + '=' + qoo_visitorId + '&';
+                 break;
+            case 'cache_version' :
+                qoo_data['values'][qoo_data['keys'][key]] = (new Date().getTime());
+                qoo_url += qoo_data['keys'][key] + '=' + qoo_data['values'][qoo_data['keys'][key]] + '&';
+                break;
+            default:
+                def = true;
+                break;
+        }
+        qoo_url = (def) ? (qoo_url + qoo_data['keys'][key] + '=&') : qoo_url;
+    }
+    qoo_url = qoo_url.replace(/&+$/,'');
+    qoo_data['values']['f_url'] = qoo_url;
+    var qoo_img = document.createElement('img');
+    qoo_img.id = 'qoo_log_pixel';
+    qoo_img.src = qoo_url;
+    qoo_img.alt = 'qoo_log'
+    qoo_img.style.height = "1px";
+    qoo_img.style.width = "1px";
+    qoo_img.style.display = "none";
+    window.onload = document.body.appendChild(qoo_img);
+</script>
 </body>
+<!-- <link rel="manifest" href="/manifest.json"> -->
 </html>
